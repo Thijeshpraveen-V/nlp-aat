@@ -1,0 +1,473 @@
+{
+  "model": "main",
+  "categories": {
+    "correct": 266,
+    "missed": 104,
+    "boundary": 121,
+    "spurious": 224,
+    "type": 5,
+    "bound+type": 5
+  },
+  "per_type": {
+    "NAME": {
+      "correct": 29,
+      "boundary": 6,
+      "missed": 2
+    },
+    "EMAIL": {
+      "correct": 29,
+      "missed": 5,
+      "spurious": 16,
+      "boundary": 6
+    },
+    "LOCATION": {
+      "correct": 36,
+      "type": 1,
+      "missed": 12,
+      "bound+type": 1,
+      "spurious": 23,
+      "boundary": 4
+    },
+    "COLLEGE_NAME": {
+      "correct": 22,
+      "spurious": 16,
+      "boundary": 22,
+      "missed": 1,
+      "type": 2,
+      "bound+type": 2
+    },
+    "DEGREE": {
+      "correct": 24,
+      "boundary": 10,
+      "bound+type": 1,
+      "spurious": 13,
+      "missed": 6
+    },
+    "GRADUATION_YEAR": {
+      "correct": 16,
+      "spurious": 22,
+      "missed": 10,
+      "boundary": 1
+    },
+    "COMPANIES_WORKED_AT": {
+      "correct": 68,
+      "spurious": 69,
+      "missed": 33,
+      "boundary": 14,
+      "bound+type": 1,
+      "type": 1
+    },
+    "DESIGNATION": {
+      "correct": 33,
+      "missed": 18,
+      "boundary": 25,
+      "spurious": 38
+    },
+    "YEARS_OF_EXPERIENCE": {
+      "spurious": 7,
+      "missed": 5,
+      "correct": 1,
+      "type": 1
+    },
+    "SKILLS": {
+      "correct": 8,
+      "boundary": 33,
+      "spurious": 20,
+      "missed": 12
+    }
+  },
+  "hardest_types_by_f1": [
+    {
+      "type": "SKILLS",
+      "f1": 0.11111111111111112
+    },
+    {
+      "type": "YEARS_OF_EXPERIENCE",
+      "f1": 0.13333333333333333
+    },
+    {
+      "type": "COLLEGE_NAME",
+      "f1": 0.3697478991596638
+    },
+    {
+      "type": "DESIGNATION",
+      "f1": 0.37500000000000006
+    },
+    {
+      "type": "GRADUATION_YEAR",
+      "f1": 0.45714285714285713
+    },
+    {
+      "type": "COMPANIES_WORKED_AT",
+      "f1": 0.4874551971326165
+    },
+    {
+      "type": "DEGREE",
+      "f1": 0.4948453608247423
+    },
+    {
+      "type": "EMAIL",
+      "f1": 0.5918367346938775
+    },
+    {
+      "type": "LOCATION",
+      "f1": 0.6
+    },
+    {
+      "type": "NAME",
+      "f1": 0.8285714285714285
+    }
+  ],
+  "examples": {
+    "correct": [
+      {
+        "doc": "resume_009",
+        "gold": {
+          "text": "Ashok Kunam",
+          "label": "NAME"
+        },
+        "pred": {
+          "text": "Ashok Kunam",
+          "label": "NAME"
+        }
+      },
+      {
+        "doc": "resume_009",
+        "gold": {
+          "text": "Team Lead",
+          "label": "DESIGNATION"
+        },
+        "pred": {
+          "text": "Team Lead",
+          "label": "DESIGNATION"
+        }
+      },
+      {
+        "doc": "resume_009",
+        "gold": {
+          "text": "Microsoft",
+          "label": "COMPANIES_WORKED_AT"
+        },
+        "pred": {
+          "text": "Microsoft",
+          "label": "COMPANIES_WORKED_AT"
+        }
+      },
+      {
+        "doc": "resume_015",
+        "gold": {
+          "text": "Financial Analyst",
+          "label": "DESIGNATION"
+        },
+        "pred": {
+          "text": "Financial Analyst",
+          "label": "DESIGNATION"
+        }
+      },
+      {
+        "doc": "resume_015",
+        "gold": {
+          "text": "Oracle",
+          "label": "COMPANIES_WORKED_AT"
+        },
+        "pred": {
+          "text": "Oracle",
+          "label": "COMPANIES_WORKED_AT"
+        }
+      },
+      {
+        "doc": "resume_015",
+        "gold": {
+          "text": "Bengaluru",
+          "label": "LOCATION"
+        },
+        "pred": {
+          "text": "Bengaluru",
+          "label": "LOCATION"
+        }
+      }
+    ],
+    "missed": [
+      {
+        "doc": "resume_009",
+        "gold": {
+          "text": "indeed.com/r/Ashok-Kunam/7aac8767aacf10a0",
+          "label": "EMAIL"
+        },
+        "pred": null
+      },
+      {
+        "doc": "resume_009",
+        "gold": {
+          "text": "Team Lead",
+          "label": "DESIGNATION"
+        },
+        "pred": null
+      },
+      {
+        "doc": "resume_009",
+        "gold": {
+          "text": "Team Lead",
+          "label": "DESIGNATION"
+        },
+        "pred": null
+      },
+      {
+        "doc": "resume_015",
+        "gold": {
+          "text": "Process associate",
+          "label": "DESIGNATION"
+        },
+        "pred": null
+      },
+      {
+        "doc": "resume_018",
+        "gold": {
+          "text": "Delhi",
+          "label": "LOCATION"
+        },
+        "pred": null
+      },
+      {
+        "doc": "resume_018",
+        "gold": {
+          "text": "CSS",
+          "label": "SKILLS"
+        },
+        "pred": null
+      }
+    ],
+    "boundary": [
+      {
+        "doc": "resume_009",
+        "gold": {
+          "text": "• Programming Languages: Java & J2EE, PHP, Apache Nifi, SOAP Web Services, Rest Web Services,\nJackson-2\n• Framework's: Spring, Hibernate, Junit, Mockito\n• Database: MYSQL, SQL Server, Oracle\n• App/Web Servers: Tomcat, Apache\n\n• Operating Systems: Windows, Linux\n• SKM: Lithium\n• Tools: Git, JIRA, Eclipse, putty\n\nKnowledge Purview\n\n• Methodologies and Principles:\n◦ Code Generation Tools\n◦ Documentation Generation\n◦ Inversion of Control\n◦ Iterative Development\n◦ Object Oriented Programming\n◦ Deployment\n◦ Agile\n\nProfessional Experience\n\nCore Competencies\n\n~ Requirement Gathering\n~ Deployment & Support\n~ Project Management\n~ Software Development Life Cycle\n~ Delivery Management\n~ Quality Assurance\n~ Application / Software Development\n~ Liaison & Coordination",
+          "label": "SKILLS"
+        },
+        "pred": {
+          "text": "Technical Skills\n\n• Programming Languages: Java & J2EE, PHP, Apache Nifi, SOAP Web Services, Rest Web Services,\nJackson-2\n• Framework's: Spring, Hibernate, Junit, Mockito\n• Database: MYSQL, SQL Server, Oracle\n• App/Web Servers: Tomcat, Apache\n\n• Operating Systems: Windows, Linux\n• SKM: Lithium\n• Tools: Git, JIRA, Eclipse, putty\n\nKnowledge Purview\n\n• Methodologies and Principles:\n◦ Code Generation Tools\n◦ Documentation Generation\n◦ Inversion of Control\n◦ Iterative Development\n◦ Object Oriented Programming\n◦ Deployment\n◦ Agile\n\nProfessional Experience\n\nCore Competencies\n\n~ Requirement Gathering\n~ Deployment & Support\n~ Project Management",
+          "label": "SKILLS"
+        }
+      },
+      {
+        "doc": "resume_015",
+        "gold": {
+          "text": "Darshan G.",
+          "label": "NAME"
+        },
+        "pred": {
+          "text": "Darshan G",
+          "label": "NAME"
+        }
+      },
+      {
+        "doc": "resume_015",
+        "gold": {
+          "text": "B B M in Education",
+          "label": "DEGREE"
+        },
+        "pred": {
+          "text": "B",
+          "label": "DEGREE"
+        }
+      },
+      {
+        "doc": "resume_015",
+        "gold": {
+          "text": "I D S G GOVT. College",
+          "label": "DEGREE"
+        },
+        "pred": {
+          "text": "S",
+          "label": "DEGREE"
+        }
+      },
+      {
+        "doc": "resume_018",
+        "gold": {
+          "text": "Co-coordinator of CODE HUNTER at CGC FEST",
+          "label": "DESIGNATION"
+        },
+        "pred": {
+          "text": "Co-coordinator of",
+          "label": "DESIGNATION"
+        }
+      },
+      {
+        "doc": "resume_018",
+        "gold": {
+          "text": "Co-coordinator of CODE HUNTER at CGC FEST",
+          "label": "DESIGNATION"
+        },
+        "pred": {
+          "text": "Co-coordinator of CODE",
+          "label": "DESIGNATION"
+        }
+      }
+    ],
+    "spurious": [
+      {
+        "doc": "resume_009",
+        "gold": null,
+        "pred": {
+          "text": "2.5 years",
+          "label": "YEARS_OF_EXPERIENCE"
+        }
+      },
+      {
+        "doc": "resume_009",
+        "gold": null,
+        "pred": {
+          "text": "Oracle",
+          "label": "COMPANIES_WORKED_AT"
+        }
+      },
+      {
+        "doc": "resume_009",
+        "gold": null,
+        "pred": {
+          "text": "Cisco",
+          "label": "COMPANIES_WORKED_AT"
+        }
+      },
+      {
+        "doc": "resume_015",
+        "gold": null,
+        "pred": {
+          "text": "indeed.com/r/Darshan-G/025a61a82c6a8c5a",
+          "label": "EMAIL"
+        }
+      },
+      {
+        "doc": "resume_015",
+        "gold": null,
+        "pred": {
+          "text": "University",
+          "label": "COLLEGE_NAME"
+        }
+      },
+      {
+        "doc": "resume_015",
+        "gold": null,
+        "pred": {
+          "text": "Project",
+          "label": "SKILLS"
+        }
+      }
+    ],
+    "type": [
+      {
+        "doc": "resume_015",
+        "gold": {
+          "text": "indeed.com/r/Darshan-G/025a61a82c6a8c5a",
+          "label": "LOCATION"
+        },
+        "pred": {
+          "text": "indeed.com/r/Darshan-G/025a61a82c6a8c5a",
+          "label": "EMAIL"
+        }
+      },
+      {
+        "doc": "resume_114",
+        "gold": {
+          "text": "C-DAC",
+          "label": "COLLEGE_NAME"
+        },
+        "pred": {
+          "text": "C-DAC",
+          "label": "DEGREE"
+        }
+      },
+      {
+        "doc": "resume_153",
+        "gold": {
+          "text": "HR Manager",
+          "label": "COMPANIES_WORKED_AT"
+        },
+        "pred": {
+          "text": "HR Manager",
+          "label": "DESIGNATION"
+        }
+      },
+      {
+        "doc": "resume_187",
+        "gold": {
+          "text": "2011",
+          "label": "COLLEGE_NAME"
+        },
+        "pred": {
+          "text": "2011",
+          "label": "GRADUATION_YEAR"
+        }
+      },
+      {
+        "doc": "resume_218",
+        "gold": {
+          "text": "2004",
+          "label": "YEARS_OF_EXPERIENCE"
+        },
+        "pred": {
+          "text": "2004",
+          "label": "GRADUATION_YEAR"
+        }
+      }
+    ],
+    "bound+type": [
+      {
+        "doc": "resume_018",
+        "gold": {
+          "text": "MCA",
+          "label": "DEGREE"
+        },
+        "pred": {
+          "text": "MCA\n\nPunjab Technical University",
+          "label": "COLLEGE_NAME"
+        }
+      },
+      {
+        "doc": "resume_019",
+        "gold": {
+          "text": "Indeed: indeed.com/r/Dushyant-\nBhatt/140749dace5dc26f",
+          "label": "LOCATION"
+        },
+        "pred": {
+          "text": "indeed.com/r/Dushyant-\nBhatt/140749dace5dc26f",
+          "label": "EMAIL"
+        }
+      },
+      {
+        "doc": "resume_153",
+        "gold": {
+          "text": "Velammal New",
+          "label": "COMPANIES_WORKED_AT"
+        },
+        "pred": {
+          "text": "Velammal",
+          "label": "LOCATION"
+        }
+      },
+      {
+        "doc": "resume_155",
+        "gold": {
+          "text": "True Vision Technology",
+          "label": "COLLEGE_NAME"
+        },
+        "pred": {
+          "text": "Jr. ASP.NET Developer in True",
+          "label": "DESIGNATION"
+        }
+      },
+      {
+        "doc": "resume_155",
+        "gold": {
+          "text": "True Vision Technology",
+          "label": "COLLEGE_NAME"
+        },
+        "pred": {
+          "text": "Vision",
+          "label": "COMPANIES_WORKED_AT"
+        }
+      }
+    ]
+  }
+}

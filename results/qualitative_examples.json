@@ -1,0 +1,808 @@
+[
+  {
+    "doc": "resume_009",
+    "section": "header",
+    "snippet": "Ashok Kunam\nTeam Lead - Microsoft\n\n- Email me on Indeed: indeed.com/r/Ashok-Kunam/7aac8767aacf10a0\n\n• Software Engineering professional with over 2.5 years of experience in development,",
+    "start": 0,
+    "end": 185,
+    "gold": [
+      {
+        "text": "Ashok Kunam",
+        "label": "NAME"
+      },
+      {
+        "text": "Team Lead",
+        "label": "DESIGNATION"
+      },
+      {
+        "text": "Microsoft",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "indeed.com/r/Ashok-Kunam/7aac8767aacf10a0",
+        "label": "EMAIL"
+      }
+    ],
+    "pretrained": [
+      {
+        "text": "Ashok Kunam",
+        "label": "NAME"
+      },
+      {
+        "text": "Microsoft",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "Kunam",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Software Engineering",
+        "label": "COMPANIES_WORKED_AT"
+      }
+    ],
+    "finetuned": [
+      {
+        "text": "Ashok Kunam",
+        "label": "NAME"
+      },
+      {
+        "text": "Team Lead",
+        "label": "DESIGNATION"
+      },
+      {
+        "text": "Microsoft",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "indeed.com/r/Ashok-Kunam/7aac8767aacf10a0",
+        "label": "EMAIL"
+      },
+      {
+        "text": "2.5 years",
+        "label": "YEARS_OF_EXPERIENCE"
+      }
+    ]
+  },
+  {
+    "doc": "resume_015",
+    "section": "DESIGNATION",
+    "snippet": "Darshan G.\nFinancial Analyst - Oracle\n\nBengaluru, Karnataka - Email me on Indeed: indeed.com/r/Darshan-G/025a61a82c6a8c5a\n\nHard worker, Patience and Good commitment.\n\nI here by declare that the above-furnished details are true up to my knowledge.\n",
+    "start": 0,
+    "end": 247,
+    "gold": [
+      {
+        "text": "Darshan G.",
+        "label": "NAME"
+      },
+      {
+        "text": "Financial Analyst",
+        "label": "DESIGNATION"
+      },
+      {
+        "text": "Oracle",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "Bengaluru",
+        "label": "LOCATION"
+      },
+      {
+        "text": "indeed.com/r/Darshan-G/025a61a82c6a8c5a",
+        "label": "LOCATION"
+      }
+    ],
+    "pretrained": [
+      {
+        "text": "Darshan G",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "Oracle\n\nBengaluru",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "Karnataka",
+        "label": "LOCATION"
+      }
+    ],
+    "finetuned": [
+      {
+        "text": "Darshan G",
+        "label": "NAME"
+      },
+      {
+        "text": ".",
+        "label": "DESIGNATION"
+      },
+      {
+        "text": "Financial Analyst",
+        "label": "DESIGNATION"
+      },
+      {
+        "text": "Oracle",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "Bengaluru",
+        "label": "LOCATION"
+      },
+      {
+        "text": "indeed.com/r/Darshan-G/025a61a82c6a8c5a",
+        "label": "EMAIL"
+      }
+    ]
+  },
+  {
+    "doc": "resume_018",
+    "section": "DEGREE",
+    "snippet": "\nORACLE SQL -\n\n2015 to 2015\n\nEDUCATION\n\nMCA\n\nPunjab Technical University -  Chandigarh, Chandigarh\n\n2017\n\nBCA\n\nBharati Vidyapeeth University -  Pune, Maharashtra\n\n2014\n\nCBSE\n\nCrescent Public School -  New Delhi, Delhi\n\n2011\n\nCBSE\n",
+    "start": 446,
+    "end": 676,
+    "gold": [
+      {
+        "text": "MCA",
+        "label": "DEGREE"
+      },
+      {
+        "text": "Punjab Technical University -  Chandigarh, Chandigarh",
+        "label": "COLLEGE_NAME"
+      },
+      {
+        "text": "BCA",
+        "label": "DEGREE"
+      },
+      {
+        "text": "Bharati Vidyapeeth University -  Pune, Maharashtra",
+        "label": "COLLEGE_NAME"
+      },
+      {
+        "text": "2014",
+        "label": "GRADUATION_YEAR"
+      },
+      {
+        "text": "Crescent Public School -  New Delhi, Delhi",
+        "label": "COLLEGE_NAME"
+      },
+      {
+        "text": "2011",
+        "label": "GRADUATION_YEAR"
+      }
+    ],
+    "pretrained": [
+      {
+        "text": "Punjab Technical University",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "Chandigarh",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Chandigarh",
+        "label": "LOCATION"
+      },
+      {
+        "text": "BCA\n\nBharati Vidyapeeth University",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "Pune",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Maharashtra",
+        "label": "LOCATION"
+      },
+      {
+        "text": "CBSE\n\nCrescent Public School",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "New Delhi",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Delhi",
+        "label": "LOCATION"
+      }
+    ],
+    "finetuned": [
+      {
+        "text": "2015",
+        "label": "GRADUATION_YEAR"
+      },
+      {
+        "text": "2015",
+        "label": "GRADUATION_YEAR"
+      },
+      {
+        "text": "MCA\n\nPunjab Technical University",
+        "label": "COLLEGE_NAME"
+      },
+      {
+        "text": "2017",
+        "label": "GRADUATION_YEAR"
+      },
+      {
+        "text": "BCA",
+        "label": "DEGREE"
+      },
+      {
+        "text": "Bharati Vidyapeeth University",
+        "label": "COLLEGE_NAME"
+      },
+      {
+        "text": "2014",
+        "label": "GRADUATION_YEAR"
+      },
+      {
+        "text": "CBSE\n\nCrescent Public School",
+        "label": "COLLEGE_NAME"
+      },
+      {
+        "text": "2011",
+        "label": "GRADUATION_YEAR"
+      }
+    ]
+  },
+  {
+    "doc": "resume_019",
+    "section": "header",
+    "snippet": "Dushyant Bhatt\nBI / Big Data/ Azure\n\nHyderabad-Deccan, Telangana, Telangana - Email me on Indeed: indeed.com/r/Dushyant-\nBhatt/140749dace5dc26f\n\n• 10+ years of Experience in Designing, Development, Administration, Analysis, Management in",
+    "start": 0,
+    "end": 237,
+    "gold": [
+      {
+        "text": "Dushyant Bhatt",
+        "label": "NAME"
+      },
+      {
+        "text": "Hyderabad",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Indeed: indeed.com/r/Dushyant-\nBhatt/140749dace5dc26f",
+        "label": "LOCATION"
+      }
+    ],
+    "pretrained": [
+      {
+        "text": "Dushyant",
+        "label": "NAME"
+      },
+      {
+        "text": "Bhatt",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "Hyderabad",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Deccan",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Telangana",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Telangana",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Bhatt",
+        "label": "LOCATION"
+      }
+    ],
+    "finetuned": [
+      {
+        "text": "Dushyant Bhatt",
+        "label": "NAME"
+      },
+      {
+        "text": "Hyderabad",
+        "label": "LOCATION"
+      },
+      {
+        "text": "indeed.com/r/Dushyant-\nBhatt/140749dace5dc26f",
+        "label": "EMAIL"
+      }
+    ]
+  },
+  {
+    "doc": "resume_045",
+    "section": "DESIGNATION",
+    "snippet": "Mohini Gupta\nServer Support Engineer\n\nGurgaon, Haryana - Email me on Indeed: indeed.com/r/Mohini-Gupta/08b5b8e1acd8cf07\n\nWilling to relocate: Anywhere\n\nWORK EXPERIENCE\n\nServer Support Engineer\n\nMicrosoft -\n\nJuly 2015 to November 2017\n\nKey Responsibilities:",
+    "start": 0,
+    "end": 256,
+    "gold": [
+      {
+        "text": "Mohini Gupta",
+        "label": "NAME"
+      },
+      {
+        "text": "Server Support Engineer",
+        "label": "DESIGNATION"
+      },
+      {
+        "text": "Gurgaon",
+        "label": "LOCATION"
+      },
+      {
+        "text": "indeed.com/r/Mohini-Gupta/08b5b8e1acd8cf07",
+        "label": "EMAIL"
+      },
+      {
+        "text": "Server Support Engineer",
+        "label": "DESIGNATION"
+      },
+      {
+        "text": "Microsoft",
+        "label": "COMPANIES_WORKED_AT"
+      }
+    ],
+    "pretrained": [
+      {
+        "text": "Mohini Gupta",
+        "label": "NAME"
+      },
+      {
+        "text": "Gurgaon",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Haryana",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Microsoft",
+        "label": "COMPANIES_WORKED_AT"
+      }
+    ],
+    "finetuned": [
+      {
+        "text": "Mohini Gupta",
+        "label": "NAME"
+      },
+      {
+        "text": "Server Support Engineer",
+        "label": "DESIGNATION"
+      },
+      {
+        "text": "Gurgaon",
+        "label": "LOCATION"
+      },
+      {
+        "text": "indeed.com/r/Mohini-Gupta/08b5b8e1acd8cf07",
+        "label": "EMAIL"
+      },
+      {
+        "text": "Server",
+        "label": "DESIGNATION"
+      },
+      {
+        "text": "Support Engineer",
+        "label": "DESIGNATION"
+      },
+      {
+        "text": "Microsoft",
+        "label": "COMPANIES_WORKED_AT"
+      }
+    ]
+  },
+  {
+    "doc": "resume_055",
+    "section": "DEGREE",
+    "snippet": "The divisions were also compared against each other (comparison reports)\n\nEDUCATION\n\nB.E\n\nVisvesvaraya Technological University\n\n2017\n\nBachelor of Engineering in Engineering\n",
+    "start": 3052,
+    "end": 3226,
+    "gold": [
+      {
+        "text": "B.E",
+        "label": "DEGREE"
+      },
+      {
+        "text": "Visvesvaraya Technological University",
+        "label": "COLLEGE_NAME"
+      },
+      {
+        "text": "Bachelor of Engineering in Engineering",
+        "label": "DEGREE"
+      }
+    ],
+    "pretrained": [
+      {
+        "text": "Technological University",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "Engineering",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "Engineering",
+        "label": "COMPANIES_WORKED_AT"
+      }
+    ],
+    "finetuned": [
+      {
+        "text": "B.E",
+        "label": "DEGREE"
+      },
+      {
+        "text": "Visvesvaraya Technological University",
+        "label": "COLLEGE_NAME"
+      },
+      {
+        "text": "2017",
+        "label": "GRADUATION_YEAR"
+      },
+      {
+        "text": "Bachelor of Engineering in Engineering",
+        "label": "DEGREE"
+      }
+    ]
+  },
+  {
+    "doc": "resume_056",
+    "section": "header",
+    "snippet": "Prem Koshti\nOfficer-HR & Administration in H.& R. Johnson (India) - SAP - R\n\nDewas, Madhya Pradesh - Email me on Indeed: indeed.com/r/Prem-Koshti/a1fec9e7289496f0\n\n❖ To acquire a key Position in Human Resource Management / SAP field by continuously improving",
+    "start": 0,
+    "end": 258,
+    "gold": [
+      {
+        "text": "Prem Koshti",
+        "label": "NAME"
+      },
+      {
+        "text": "Officer-HR & Administration in H.& R. Johnson (India)",
+        "label": "DESIGNATION"
+      },
+      {
+        "text": "SAP",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "Dewas",
+        "label": "LOCATION"
+      },
+      {
+        "text": "indeed.com/r/Prem-Koshti/a1fec9e7289496f0",
+        "label": "EMAIL"
+      },
+      {
+        "text": "SAP",
+        "label": "COMPANIES_WORKED_AT"
+      }
+    ],
+    "pretrained": [
+      {
+        "text": "Prem Koshti",
+        "label": "NAME"
+      },
+      {
+        "text": "HR & Administration",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "H.& R. Johnson",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "India",
+        "label": "LOCATION"
+      },
+      {
+        "text": "SAP",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "R\n\nDewas",
+        "label": "NAME"
+      },
+      {
+        "text": "Madhya Pradesh",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Koshti",
+        "label": "NAME"
+      },
+      {
+        "text": "Human Resource Management",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "SAP",
+        "label": "COMPANIES_WORKED_AT"
+      }
+    ],
+    "finetuned": [
+      {
+        "text": "Prem Koshti",
+        "label": "NAME"
+      },
+      {
+        "text": "Officer-HR & Administration in H.& R",
+        "label": "DESIGNATION"
+      },
+      {
+        "text": "Johnson",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "SAP",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "R",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Dewas",
+        "label": "LOCATION"
+      },
+      {
+        "text": "indeed.com/r/Prem-Koshti/a1fec9e7289496f0",
+        "label": "EMAIL"
+      }
+    ]
+  },
+  {
+    "doc": "resume_060",
+    "section": "DESIGNATION",
+    "snippet": "Rajeev Kumar\nSenior Associate Consultant - Infosys/Offshore Lead\n\nBengaluru, Karnataka - Email me on Indeed: indeed.com/r/Rajeev-Kumar/3f560fd91275495b\n\n•An erudite professional with 2 years of IT/Presales/Project Management experience",
+    "start": 0,
+    "end": 235,
+    "gold": [
+      {
+        "text": "Rajeev Kumar",
+        "label": "NAME"
+      },
+      {
+        "text": "Senior Associate Consultant",
+        "label": "DESIGNATION"
+      },
+      {
+        "text": "Infosys/Offshore Lead",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "Bengaluru",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Indeed: indeed.com/r/Rajeev-Kumar/3f560fd91275495b",
+        "label": "EMAIL"
+      },
+      {
+        "text": "2 years",
+        "label": "YEARS_OF_EXPERIENCE"
+      }
+    ],
+    "pretrained": [
+      {
+        "text": "Rajeev Kumar",
+        "label": "NAME"
+      },
+      {
+        "text": "Infosys",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "Lead\n\nBengaluru",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "Karnataka",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Kumar",
+        "label": "NAME"
+      }
+    ],
+    "finetuned": [
+      {
+        "text": "Rajeev Kumar",
+        "label": "NAME"
+      },
+      {
+        "text": "Senior Associate Consultant",
+        "label": "DESIGNATION"
+      },
+      {
+        "text": "Infosys",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "/Offshore Lead",
+        "label": "DESIGNATION"
+      },
+      {
+        "text": "Bengaluru",
+        "label": "LOCATION"
+      },
+      {
+        "text": "indeed.com/r/Rajeev-Kumar/3f560fd91275495b",
+        "label": "EMAIL"
+      }
+    ]
+  },
+  {
+    "doc": "resume_066",
+    "section": "DEGREE",
+    "snippet": "\nEDUCATION\n\nGovt. High school Yernalli\n\nB.E. in Electrical\n\nKarnataka State -  Bidar, Karnataka\n\nSKILLS\n\nAC (Less than 1 year), Allen Bradley (Less than 1 year), Engineer (Less than 1 year), FANUC\n(Less than 1 year), GE FANUC (Less than 1 year)\n",
+    "start": 497,
+    "end": 742,
+    "gold": [
+      {
+        "text": "Govt. High school Yernalli",
+        "label": "COLLEGE_NAME"
+      },
+      {
+        "text": "B.E. in Electrical",
+        "label": "DEGREE"
+      },
+      {
+        "text": "Bidar",
+        "label": "LOCATION"
+      },
+      {
+        "text": "AC (Less than 1 year), Allen Bradley (Less than 1 year), Engineer (Less than 1 year), FANUC\n(Less than 1 year), GE FANUC (Less than 1 year)",
+        "label": "SKILLS"
+      }
+    ],
+    "pretrained": [
+      {
+        "text": "Yernalli\n\nB",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "E",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "Electrical\n\nKarnataka",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "Bidar",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Karnataka",
+        "label": "LOCATION"
+      },
+      {
+        "text": "SKILLS\n\nAC",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "Allen Bradley",
+        "label": "NAME"
+      },
+      {
+        "text": "FANUC",
+        "label": "COMPANIES_WORKED_AT"
+      },
+      {
+        "text": "GE",
+        "label": "COMPANIES_WORKED_AT"
+      }
+    ],
+    "finetuned": [
+      {
+        "text": "Govt. High school",
+        "label": "COLLEGE_NAME"
+      },
+      {
+        "text": "Yernalli",
+        "label": "COLLEGE_NAME"
+      },
+      {
+        "text": "B.E. in",
+        "label": "DEGREE"
+      },
+      {
+        "text": "Electrical\n\nKarnataka",
+        "label": "COLLEGE_NAME"
+      },
+      {
+        "text": "Bidar",
+        "label": "LOCATION"
+      },
+      {
+        "text": "AC (Less",
+        "label": "SKILLS"
+      },
+      {
+        "text": "year), Allen Bradley (Less than",
+        "label": "SKILLS"
+      },
+      {
+        "text": "year",
+        "label": "SKILLS"
+      },
+      {
+        "text": ", Engineer (",
+        "label": "SKILLS"
+      },
+      {
+        "text": "than",
+        "label": "SKILLS"
+      },
+      {
+        "text": "year",
+        "label": "SKILLS"
+      },
+      {
+        "text": ", FANUC\n(Less",
+        "label": "SKILLS"
+      },
+      {
+        "text": "), GE FANUC",
+        "label": "SKILLS"
+      }
+    ]
+  },
+  {
+    "doc": "resume_073",
+    "section": "header",
+    "snippet": "Samyuktha Shivakumar\nLooking for strategic opportunities in the field of marketing\n\nBangalore, Karnataka - Email me on Indeed: indeed.com/r/Samyuktha-Shivakumar/\ncabce09fe942cb85\n\nWORK EXPERIENCE\n\nMarketing Operations Specialist & Product Marketer\n",
+    "start": 0,
+    "end": 248,
+    "gold": [
+      {
+        "text": "Samyuktha Shivakumar",
+        "label": "NAME"
+      },
+      {
+        "text": "Bangalore",
+        "label": "LOCATION"
+      },
+      {
+        "text": "indeed.com/r/Samyuktha-Shivakumar/\ncabce09fe942cb85",
+        "label": "EMAIL"
+      }
+    ],
+    "pretrained": [
+      {
+        "text": "Samyuktha Shivakumar",
+        "label": "NAME"
+      },
+      {
+        "text": "Bangalore",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Karnataka",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Shivakumar",
+        "label": "NAME"
+      }
+    ],
+    "finetuned": [
+      {
+        "text": "Samyuktha Shivakumar",
+        "label": "NAME"
+      },
+      {
+        "text": "Bangalore",
+        "label": "LOCATION"
+      },
+      {
+        "text": "indeed.com/r/Samyuktha-Shivakumar/\ncabce09fe942cb85",
+        "label": "EMAIL"
+      },
+      {
+        "text": "Marketing Operations Specialist & Product Marketer",
+        "label": "DESIGNATION"
+      }
+    ]
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "text": "Akansha Jain",
+    "label": "NAME",
+    "start": 0,
+    "end": 12
+  },
+  {
+    "text": "Pune,",
+    "label": "LOCATION",
+    "start": 13,
+    "end": 18
+  },
+  {
+    "text": "indeed.com/r/Akansha-Jain/b53674429e164cfc",
+    "label": "EMAIL",
+    "start": 53,
+    "end": 95
+  },
+  {
+    "text": "Developer",
+    "label": "DESIGNATION",
+    "start": 256,
+    "end": 265
+  },
+  {
+    "text": "Microsoft",
+    "label": "COMPANIES_WORKED_AT",
+    "start": 267,
+    "end": 276
+  },
+  {
+    "text": "Pune,",
+    "label": "LOCATION",
+    "start": 280,
+    "end": 285
+  },
+  {
+    "text": "Developer",
+    "label": "DESIGNATION",
+    "start": 331,
+    "end": 340
+  },
+  {
+    "text": "for Microsoft",
+    "label": "COMPANIES_WORKED_AT",
+    "start": 1012,
+    "end": 1025
+  },
+  {
+    "text": "EDUCATION\n\nB.TECH in Engineering",
+    "label": "DEGREE",
+    "start": 1043,
+    "end": 1075
+  },
+  {
+    "text": "Engineering\n\nGRAPHIC ERA UNIVERSITY",
+    "label": "COLLEGE_NAME",
+    "start": 1064,
+    "end": 1099
+  },
+  {
+    "text": "to 2016",
+    "label": "GRADUATION_YEAR",
+    "start": 1132,
+    "end": 1139
+  },
+  {
+    "text": "SKILLS\n\nBI (1 year), BUSINESS INTELLIGENCE (1 year), DATABASE (1 year), ETL (1 year), EXTRACT,\nTRANSFORM, AND LOAD (1 year",
+    "label": "SKILLS",
+    "start": 1259,
+    "end": 1381
+  },
+  {
+    "text": "INFORMATION\n\nSKILLS ETL: Microsoft SSIS\nReporting: Power BI\nDatabase: MS SQL SERVER 2016\nLanguages: SQL, PL",
+    "label": "SKILLS",
+    "start": 1493,
+    "end": 1600
+  },
+  {
+    "text": "Date: (Akansha",
+    "label": "NAME",
+    "start": 1857,
+    "end": 1871
+  }
+]

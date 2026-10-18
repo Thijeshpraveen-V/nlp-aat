@@ -1,0 +1,22 @@
+python 3.12.12
+platform Windows-11-10.0.26300-SP0
+cpu Intel64 Family 6 Model 183 Stepping 1, GenuineIntel
+gpu NVIDIA GeForce RTX 4050 Laptop GPU
+cuda 13.0
+seed 42
+
+torch==2.14.1+cu130
+transformers==5.20.0
+datasets==5.1.0
+accelerate==1.15.0
+seqeval==1.2.2
+scikit-learn==1.9.1
+numpy==2.5.4
+pandas==3.0.6
+matplotlib==3.11.2
+seaborn==0.13.2
+pdfplumber==0.11.10
+python-docx==1.2.0
+fastapi==0.143.2
+uvicorn==0.54.0
+python-pptx==1.0.2

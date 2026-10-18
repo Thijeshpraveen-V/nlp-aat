@@ -1,0 +1,1448 @@
+{
+  "config": {
+    "tag": "cv_main",
+    "lr": 3e-05,
+    "batch_size": 8,
+    "micro_batch": 8,
+    "epochs": 10,
+    "max_length": 512,
+    "stride": 128,
+    "weight_decay": 0.01,
+    "warmup": 0.1,
+    "seed": 42,
+    "truncate": false,
+    "class_weights": false,
+    "oversample": false,
+    "variant": "clean",
+    "cv": true,
+    "save_model": false,
+    "base_model": "dslim/bert-base-NER",
+    "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "labels": [
+      "O",
+      "B-NAME",
+      "I-NAME",
+      "B-EMAIL",
+      "I-EMAIL",
+      "B-LOCATION",
+      "I-LOCATION",
+      "B-COLLEGE_NAME",
+      "I-COLLEGE_NAME",
+      "B-DEGREE",
+      "I-DEGREE",
+      "B-GRADUATION_YEAR",
+      "I-GRADUATION_YEAR",
+      "B-COMPANIES_WORKED_AT",
+      "I-COMPANIES_WORKED_AT",
+      "B-DESIGNATION",
+      "I-DESIGNATION",
+      "B-YEARS_OF_EXPERIENCE",
+      "I-YEARS_OF_EXPERIENCE",
+      "B-SKILLS",
+      "I-SKILLS"
+    ],
+    "precision": "bf16 autocast"
+  },
+  "folds": [
+    {
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.4849694555455988,
+          "val_loss": 0.3600360617041588,
+          "val_micro_f1": 0.01764705882352941,
+          "val_macro_f1": 0.004651162790697674
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.4190247254712241,
+          "val_loss": 0.25103670358657837,
+          "val_micro_f1": 0.1945636623748212,
+          "val_macro_f1": 0.21516792485822211
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.29701999478138885,
+          "val_loss": 0.20756689682602883,
+          "val_micro_f1": 0.33374844333748444,
+          "val_macro_f1": 0.34106297552577436
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.22417572047803308,
+          "val_loss": 0.2086992271244526,
+          "val_micro_f1": 0.34201585503963755,
+          "val_macro_f1": 0.35193412080665176
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.1986765590097223,
+          "val_loss": 0.20475713834166526,
+          "val_micro_f1": 0.3656387665198238,
+          "val_macro_f1": 0.39982882943642756
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.155809901248325,
+          "val_loss": 0.19386273473501206,
+          "val_micro_f1": 0.4215991692627207,
+          "val_macro_f1": 0.4193256072055801
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.1302112434011001,
+          "val_loss": 0.20382205918431281,
+          "val_micro_f1": 0.4,
+          "val_macro_f1": 0.41628555029825726
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.11336906691650292,
+          "val_loss": 0.21105636656284332,
+          "val_micro_f1": 0.4317460317460317,
+          "val_macro_f1": 0.4399667002853301
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.1031893292804817,
+          "val_loss": 0.21263717263936996,
+          "val_micro_f1": 0.440463645943098,
+          "val_macro_f1": 0.44845257202566513
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.09621645966907601,
+          "val_loss": 0.2113887533545494,
+          "val_micro_f1": 0.44050104384133615,
+          "val_macro_f1": 0.4502537866612012
+        }
+      ],
+      "best_epoch": 10,
+      "best_val_micro_f1": 0.44050104384133615,
+      "train_time_sec": 203.54241132736206,
+      "n_train_windows": 385,
+      "n_train_docs": 148,
+      "oversampled_rare_types": null,
+      "test": {
+        "types": [
+          "NAME",
+          "EMAIL",
+          "LOCATION",
+          "COLLEGE_NAME",
+          "DEGREE",
+          "GRADUATION_YEAR",
+          "COMPANIES_WORKED_AT",
+          "DESIGNATION",
+          "YEARS_OF_EXPERIENCE",
+          "SKILLS"
+        ],
+        "per_type": {
+          "NAME": {
+            "precision": 0.9069767441860465,
+            "recall": 0.8297872340425532,
+            "f1": 0.8666666666666666,
+            "support": 47
+          },
+          "EMAIL": {
+            "precision": 0.45121951219512196,
+            "recall": 0.7551020408163265,
+            "f1": 0.5648854961832062,
+            "support": 49
+          },
+          "LOCATION": {
+            "precision": 0.5921052631578947,
+            "recall": 0.6338028169014085,
+            "f1": 0.6122448979591837,
+            "support": 71
+          },
+          "COLLEGE_NAME": {
+            "precision": 0.28865979381443296,
+            "recall": 0.4117647058823529,
+            "f1": 0.33939393939393936,
+            "support": 68
+          },
+          "DEGREE": {
+            "precision": 0.4714285714285714,
+            "recall": 0.5238095238095238,
+            "f1": 0.4962406015037594,
+            "support": 63
+          },
+          "GRADUATION_YEAR": {
+            "precision": 0.47058823529411764,
+            "recall": 0.41379310344827586,
+            "f1": 0.4403669724770642,
+            "support": 58
+          },
+          "COMPANIES_WORKED_AT": {
+            "precision": 0.3212121212121212,
+            "recall": 0.5408163265306123,
+            "f1": 0.40304182509505704,
+            "support": 98
+          },
+          "DESIGNATION": {
+            "precision": 0.3486238532110092,
+            "recall": 0.42696629213483145,
+            "f1": 0.3838383838383838,
+            "support": 89
+          },
+          "YEARS_OF_EXPERIENCE": {
+            "precision": 0.1111111111111111,
+            "recall": 0.14285714285714285,
+            "f1": 0.125,
+            "support": 7
+          },
+          "SKILLS": {
+            "precision": 0.08633093525179857,
+            "recall": 0.17391304347826086,
+            "f1": 0.11538461538461539,
+            "support": 69
+          }
+        },
+        "micro": {
+          "precision": 0.3686087990487515,
+          "recall": 0.5008077544426495,
+          "f1": 0.4246575342465754,
+          "support": 619
+        },
+        "macro": {
+          "precision": 0.40482561408622253,
+          "recall": 0.4852612229901288,
+          "f1": 0.43470633985018753
+        }
+      },
+      "test_with_rules": {
+        "types": [
+          "NAME",
+          "EMAIL",
+          "LOCATION",
+          "COLLEGE_NAME",
+          "DEGREE",
+          "GRADUATION_YEAR",
+          "COMPANIES_WORKED_AT",
+          "DESIGNATION",
+          "YEARS_OF_EXPERIENCE",
+          "SKILLS"
+        ],
+        "per_type": {
+          "NAME": {
+            "precision": 0.9069767441860465,
+            "recall": 0.8297872340425532,
+            "f1": 0.8666666666666666,
+            "support": 47
+          },
+          "EMAIL": {
+            "precision": 0.42857142857142855,
+            "recall": 0.9183673469387755,
+            "f1": 0.5844155844155844,
+            "support": 49
+          },
+          "LOCATION": {
+            "precision": 0.5921052631578947,
+            "recall": 0.6338028169014085,
+            "f1": 0.6122448979591837,
+            "support": 71
+          },
+          "COLLEGE_NAME": {
+            "precision": 0.28865979381443296,
+            "recall": 0.4117647058823529,
+            "f1": 0.33939393939393936,
+            "support": 68
+          },
+          "DEGREE": {
+            "precision": 0.4714285714285714,
+            "recall": 0.5238095238095238,
+            "f1": 0.4962406015037594,
+            "support": 63
+          },
+          "GRADUATION_YEAR": {
+            "precision": 0.47058823529411764,
+            "recall": 0.41379310344827586,
+            "f1": 0.4403669724770642,
+            "support": 58
+          },
+          "COMPANIES_WORKED_AT": {
+            "precision": 0.3212121212121212,
+            "recall": 0.5408163265306123,
+            "f1": 0.40304182509505704,
+            "support": 98
+          },
+          "DESIGNATION": {
+            "precision": 0.3486238532110092,
+            "recall": 0.42696629213483145,
+            "f1": 0.3838383838383838,
+            "support": 89
+          },
+          "YEARS_OF_EXPERIENCE": {
+            "precision": 0.1111111111111111,
+            "recall": 0.14285714285714285,
+            "f1": 0.125,
+            "support": 7
+          },
+          "SKILLS": {
+            "precision": 0.08695652173913043,
+            "recall": 0.17391304347826086,
+            "f1": 0.11594202898550723,
+            "support": 69
+          }
+        },
+        "micro": {
+          "precision": 0.3684820393974508,
+          "recall": 0.5137318255250404,
+          "f1": 0.4291497975708502,
+          "support": 619
+        },
+        "macro": {
+          "precision": 0.4026233643725864,
+          "recall": 0.5015877536023737,
+          "f1": 0.43671509003351455
+        }
+      }
+    },
+    {
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.4874815900692078,
+          "val_loss": 0.5142362136107225,
+          "val_micro_f1": 0.013953488372093023,
+          "val_macro_f1": 0.00316622691292876
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.41374639295182136,
+          "val_loss": 0.3863629928001991,
+          "val_micro_f1": 0.17588652482269504,
+          "val_macro_f1": 0.1896553371683803
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.29643165093226576,
+          "val_loss": 0.3014316325004284,
+          "val_micro_f1": 0.2582056892778994,
+          "val_macro_f1": 0.2747770614644486
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.23259726496076968,
+          "val_loss": 0.3064067237652265,
+          "val_micro_f1": 0.3576719576719577,
+          "val_macro_f1": 0.3781873462816506
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.17815068199467465,
+          "val_loss": 0.2988621215407665,
+          "val_micro_f1": 0.3574561403508772,
+          "val_macro_f1": 0.35831651858084285
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.14664741788270338,
+          "val_loss": 0.39176002740859983,
+          "val_micro_f1": 0.3881856540084388,
+          "val_macro_f1": 0.38971501914876155
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.12213020990640326,
+          "val_loss": 0.36094818940529455,
+          "val_micro_f1": 0.3977653631284916,
+          "val_macro_f1": 0.4030410373884864
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.10824882405787466,
+          "val_loss": 0.33328458460477683,
+          "val_micro_f1": 0.4154175588865096,
+          "val_macro_f1": 0.4195976378943663
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.09751468575547005,
+          "val_loss": 0.34296240949859985,
+          "val_micro_f1": 0.4220572640509013,
+          "val_macro_f1": 0.42502218662152763
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.09006482216145471,
+          "val_loss": 0.35552036825280925,
+          "val_micro_f1": 0.41497326203208557,
+          "val_macro_f1": 0.4175229773387555
+        }
+      ],
+      "best_epoch": 9,
+      "best_val_micro_f1": 0.4220572640509013,
+      "train_time_sec": 194.939857006073,
+      "n_train_windows": 371,
+      "n_train_docs": 148,
+      "oversampled_rare_types": null,
+      "test": {
+        "types": [
+          "NAME",
+          "EMAIL",
+          "LOCATION",
+          "COLLEGE_NAME",
+          "DEGREE",
+          "GRADUATION_YEAR",
+          "COMPANIES_WORKED_AT",
+          "DESIGNATION",
+          "YEARS_OF_EXPERIENCE",
+          "SKILLS"
+        ],
+        "per_type": {
+          "NAME": {
+            "precision": 0.7872340425531915,
+            "recall": 0.8222222222222222,
+            "f1": 0.8043478260869565,
+            "support": 45
+          },
+          "EMAIL": {
+            "precision": 0.5285714285714286,
+            "recall": 0.6851851851851852,
+            "f1": 0.5967741935483871,
+            "support": 54
+          },
+          "LOCATION": {
+            "precision": 0.59,
+            "recall": 0.59,
+            "f1": 0.59,
+            "support": 100
+          },
+          "COLLEGE_NAME": {
+            "precision": 0.2073170731707317,
+            "recall": 0.288135593220339,
+            "f1": 0.24113475177304966,
+            "support": 59
+          },
+          "DEGREE": {
+            "precision": 0.3442622950819672,
+            "recall": 0.4117647058823529,
+            "f1": 0.37499999999999994,
+            "support": 51
+          },
+          "GRADUATION_YEAR": {
+            "precision": 0.3333333333333333,
+            "recall": 0.4,
+            "f1": 0.3636363636363636,
+            "support": 35
+          },
+          "COMPANIES_WORKED_AT": {
+            "precision": 0.3956043956043956,
+            "recall": 0.34615384615384615,
+            "f1": 0.3692307692307692,
+            "support": 208
+          },
+          "DESIGNATION": {
+            "precision": 0.26573426573426573,
+            "recall": 0.34234234234234234,
+            "f1": 0.2992125984251969,
+            "support": 111
+          },
+          "YEARS_OF_EXPERIENCE": {
+            "precision": 0.16666666666666666,
+            "recall": 0.125,
+            "f1": 0.14285714285714288,
+            "support": 8
+          },
+          "SKILLS": {
+            "precision": 0.06918238993710692,
+            "recall": 0.1864406779661017,
+            "f1": 0.10091743119266056,
+            "support": 59
+          }
+        },
+        "micro": {
+          "precision": 0.34417040358744394,
+          "recall": 0.42054794520547945,
+          "f1": 0.37854500616522807,
+          "support": 730
+        },
+        "macro": {
+          "precision": 0.3687905890653087,
+          "recall": 0.419724457297239,
+          "f1": 0.3883111076750526
+        }
+      },
+      "test_with_rules": {
+        "types": [
+          "NAME",
+          "EMAIL",
+          "LOCATION",
+          "COLLEGE_NAME",
+          "DEGREE",
+          "GRADUATION_YEAR",
+          "COMPANIES_WORKED_AT",
+          "DESIGNATION",
+          "YEARS_OF_EXPERIENCE",
+          "SKILLS"
+        ],
+        "per_type": {
+          "NAME": {
+            "precision": 0.7872340425531915,
+            "recall": 0.8222222222222222,
+            "f1": 0.8043478260869565,
+            "support": 45
+          },
+          "EMAIL": {
+            "precision": 0.49019607843137253,
+            "recall": 0.9259259259259259,
+            "f1": 0.6410256410256411,
+            "support": 54
+          },
+          "LOCATION": {
+            "precision": 0.59,
+            "recall": 0.59,
+            "f1": 0.59,
+            "support": 100
+          },
+          "COLLEGE_NAME": {
+            "precision": 0.2073170731707317,
+            "recall": 0.288135593220339,
+            "f1": 0.24113475177304966,
+            "support": 59
+          },
+          "DEGREE": {
+            "precision": 0.35,
+            "recall": 0.4117647058823529,
+            "f1": 0.37837837837837834,
+            "support": 51
+          },
+          "GRADUATION_YEAR": {
+            "precision": 0.3333333333333333,
+            "recall": 0.4,
+            "f1": 0.3636363636363636,
+            "support": 35
+          },
+          "COMPANIES_WORKED_AT": {
+            "precision": 0.3956043956043956,
+            "recall": 0.34615384615384615,
+            "f1": 0.3692307692307692,
+            "support": 208
+          },
+          "DESIGNATION": {
+            "precision": 0.26573426573426573,
+            "recall": 0.34234234234234234,
+            "f1": 0.2992125984251969,
+            "support": 111
+          },
+          "YEARS_OF_EXPERIENCE": {
+            "precision": 0.16666666666666666,
+            "recall": 0.125,
+            "f1": 0.14285714285714288,
+            "support": 8
+          },
+          "SKILLS": {
+            "precision": 0.06918238993710692,
+            "recall": 0.1864406779661017,
+            "f1": 0.10091743119266056,
+            "support": 59
+          }
+        },
+        "micro": {
+          "precision": 0.3466955579631636,
+          "recall": 0.4383561643835616,
+          "f1": 0.3871748336358137,
+          "support": 730
+        },
+        "macro": {
+          "precision": 0.36552682454310637,
+          "recall": 0.44379853137131303,
+          "f1": 0.39307409026061585
+        }
+      }
+    },
+    {
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.448329698679129,
+          "val_loss": 0.4742363437838938,
+          "val_micro_f1": 0.008519701810436634,
+          "val_macro_f1": 0.0019002375296912114
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.3973539517418263,
+          "val_loss": 0.35776683311352786,
+          "val_micro_f1": 0.1645714285714286,
+          "val_macro_f1": 0.19439959545684934
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.2637356099313693,
+          "val_loss": 0.3348666549414054,
+          "val_micro_f1": 0.26594594594594595,
+          "val_macro_f1": 0.29746613715032233
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.20372966142085097,
+          "val_loss": 0.3991740959129114,
+          "val_micro_f1": 0.3453093812375249,
+          "val_macro_f1": 0.3445569822815787
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.16120206245622345,
+          "val_loss": 0.4422998597909664,
+          "val_micro_f1": 0.36790606653620356,
+          "val_macro_f1": 0.38589089793233217
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.13528336851062342,
+          "val_loss": 0.4084901626425228,
+          "val_micro_f1": 0.35932872655478776,
+          "val_macro_f1": 0.4051567772244463
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.11559202370025048,
+          "val_loss": 0.4458658371506066,
+          "val_micro_f1": 0.38235294117647056,
+          "val_macro_f1": 0.4039857104190413
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.0993891103141554,
+          "val_loss": 0.4418065796295802,
+          "val_micro_f1": 0.38293650793650796,
+          "val_macro_f1": 0.4307894296580165
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.0915160268470082,
+          "val_loss": 0.4455428395805688,
+          "val_micro_f1": 0.38366571699905033,
+          "val_macro_f1": 0.4246022048779269
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.08468451720641301,
+          "val_loss": 0.458600132115956,
+          "val_micro_f1": 0.3795066413662239,
+          "val_macro_f1": 0.4228053643726427
+        }
+      ],
+      "best_epoch": 9,
+      "best_val_micro_f1": 0.38366571699905033,
+      "train_time_sec": 210.88780045509338,
+      "n_train_windows": 397,
+      "n_train_docs": 148,
+      "oversampled_rare_types": null,
+      "test": {
+        "types": [
+          "NAME",
+          "EMAIL",
+          "LOCATION",
+          "COLLEGE_NAME",
+          "DEGREE",
+          "GRADUATION_YEAR",
+          "COMPANIES_WORKED_AT",
+          "DESIGNATION",
+          "YEARS_OF_EXPERIENCE",
+          "SKILLS"
+        ],
+        "per_type": {
+          "NAME": {
+            "precision": 0.8695652173913043,
+            "recall": 0.8888888888888888,
+            "f1": 0.8791208791208792,
+            "support": 45
+          },
+          "EMAIL": {
+            "precision": 0.5285714285714286,
+            "recall": 0.7115384615384616,
+            "f1": 0.6065573770491803,
+            "support": 52
+          },
+          "LOCATION": {
+            "precision": 0.5888888888888889,
+            "recall": 0.6794871794871795,
+            "f1": 0.630952380952381,
+            "support": 78
+          },
+          "COLLEGE_NAME": {
+            "precision": 0.2542372881355932,
+            "recall": 0.44776119402985076,
+            "f1": 0.32432432432432434,
+            "support": 67
+          },
+          "DEGREE": {
+            "precision": 0.42105263157894735,
+            "recall": 0.5079365079365079,
+            "f1": 0.460431654676259,
+            "support": 63
+          },
+          "GRADUATION_YEAR": {
+            "precision": 0.575,
+            "recall": 0.48936170212765956,
+            "f1": 0.5287356321839081,
+            "support": 47
+          },
+          "COMPANIES_WORKED_AT": {
+            "precision": 0.35542168674698793,
+            "recall": 0.5412844036697247,
+            "f1": 0.4290909090909091,
+            "support": 109
+          },
+          "DESIGNATION": {
+            "precision": 0.3357664233576642,
+            "recall": 0.4742268041237113,
+            "f1": 0.39316239316239315,
+            "support": 97
+          },
+          "YEARS_OF_EXPERIENCE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "SKILLS": {
+            "precision": 0.0967741935483871,
+            "recall": 0.17647058823529413,
+            "f1": 0.125,
+            "support": 68
+          }
+        },
+        "micro": {
+          "precision": 0.3816091954022989,
+          "recall": 0.526984126984127,
+          "f1": 0.44266666666666665,
+          "support": 630
+        },
+        "macro": {
+          "precision": 0.40252777582192023,
+          "recall": 0.49169557300372785,
+          "f1": 0.43773755505602346
+        }
+      },
+      "test_with_rules": {
+        "types": [
+          "NAME",
+          "EMAIL",
+          "LOCATION",
+          "COLLEGE_NAME",
+          "DEGREE",
+          "GRADUATION_YEAR",
+          "COMPANIES_WORKED_AT",
+          "DESIGNATION",
+          "YEARS_OF_EXPERIENCE",
+          "SKILLS"
+        ],
+        "per_type": {
+          "NAME": {
+            "precision": 0.8695652173913043,
+            "recall": 0.8888888888888888,
+            "f1": 0.8791208791208792,
+            "support": 45
+          },
+          "EMAIL": {
+            "precision": 0.4351851851851852,
+            "recall": 0.9038461538461539,
+            "f1": 0.5875,
+            "support": 52
+          },
+          "LOCATION": {
+            "precision": 0.5888888888888889,
+            "recall": 0.6794871794871795,
+            "f1": 0.630952380952381,
+            "support": 78
+          },
+          "COLLEGE_NAME": {
+            "precision": 0.2542372881355932,
+            "recall": 0.44776119402985076,
+            "f1": 0.32432432432432434,
+            "support": 67
+          },
+          "DEGREE": {
+            "precision": 0.42105263157894735,
+            "recall": 0.5079365079365079,
+            "f1": 0.460431654676259,
+            "support": 63
+          },
+          "GRADUATION_YEAR": {
+            "precision": 0.5714285714285714,
+            "recall": 0.5106382978723404,
+            "f1": 0.5393258426966292,
+            "support": 47
+          },
+          "COMPANIES_WORKED_AT": {
+            "precision": 0.35542168674698793,
+            "recall": 0.5412844036697247,
+            "f1": 0.4290909090909091,
+            "support": 109
+          },
+          "DESIGNATION": {
+            "precision": 0.3357664233576642,
+            "recall": 0.4742268041237113,
+            "f1": 0.39316239316239315,
+            "support": 97
+          },
+          "YEARS_OF_EXPERIENCE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "SKILLS": {
+            "precision": 0.0975609756097561,
+            "recall": 0.17647058823529413,
+            "f1": 0.12565445026178013,
+            "support": 68
+          }
+        },
+        "micro": {
+          "precision": 0.3773377337733773,
+          "recall": 0.5444444444444444,
+          "f1": 0.4457439896036387,
+          "support": 630
+        },
+        "macro": {
+          "precision": 0.3929106868322899,
+          "recall": 0.5130540018089651,
+          "f1": 0.43695628342855547
+        }
+      }
+    },
+    {
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.5087923603180127,
+          "val_loss": 0.4932447956569159,
+          "val_micro_f1": 0.0,
+          "val_macro_f1": 0.0
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.4226063956052829,
+          "val_loss": 0.31006648380364943,
+          "val_micro_f1": 0.13994169096209913,
+          "val_macro_f1": 0.16445027953167396
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.29260634932762536,
+          "val_loss": 0.29654405188204636,
+          "val_micro_f1": 0.33453670276774966,
+          "val_macro_f1": 0.3191292960058972
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.2195134428067085,
+          "val_loss": 0.314535616049126,
+          "val_micro_f1": 0.3436123348017621,
+          "val_macro_f1": 0.35174900437114764
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.19389274746943744,
+          "val_loss": 0.30947631419594607,
+          "val_micro_f1": 0.3719512195121952,
+          "val_macro_f1": 0.36802683025846167
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.15659044224482316,
+          "val_loss": 0.31930467664305845,
+          "val_micro_f1": 0.38461538461538464,
+          "val_macro_f1": 0.3883865469008959
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.1321401874224345,
+          "val_loss": 0.32193001748910594,
+          "val_micro_f1": 0.38669438669438666,
+          "val_macro_f1": 0.39584872471247684
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.1169490417990929,
+          "val_loss": 0.3413813665731629,
+          "val_micro_f1": 0.38437170010559657,
+          "val_macro_f1": 0.3783266158193415
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.10270729061120595,
+          "val_loss": 0.33991357906540826,
+          "val_micro_f1": 0.4156118143459916,
+          "val_macro_f1": 0.40699769679229
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.09607539369891852,
+          "val_loss": 0.33801683872493343,
+          "val_micro_f1": 0.41025641025641024,
+          "val_macro_f1": 0.4096715986298423
+        }
+      ],
+      "best_epoch": 9,
+      "best_val_micro_f1": 0.4156118143459916,
+      "train_time_sec": 199.29775547981262,
+      "n_train_windows": 390,
+      "n_train_docs": 148,
+      "oversampled_rare_types": null,
+      "test": {
+        "types": [
+          "NAME",
+          "EMAIL",
+          "LOCATION",
+          "COLLEGE_NAME",
+          "DEGREE",
+          "GRADUATION_YEAR",
+          "COMPANIES_WORKED_AT",
+          "DESIGNATION",
+          "YEARS_OF_EXPERIENCE",
+          "SKILLS"
+        ],
+        "per_type": {
+          "NAME": {
+            "precision": 0.8863636363636364,
+            "recall": 0.9069767441860465,
+            "f1": 0.896551724137931,
+            "support": 43
+          },
+          "EMAIL": {
+            "precision": 0.5211267605633803,
+            "recall": 0.7115384615384616,
+            "f1": 0.6016260162601627,
+            "support": 52
+          },
+          "LOCATION": {
+            "precision": 0.6172839506172839,
+            "recall": 0.6666666666666666,
+            "f1": 0.641025641025641,
+            "support": 75
+          },
+          "COLLEGE_NAME": {
+            "precision": 0.26732673267326734,
+            "recall": 0.38028169014084506,
+            "f1": 0.3139534883720931,
+            "support": 71
+          },
+          "DEGREE": {
+            "precision": 0.37662337662337664,
+            "recall": 0.46774193548387094,
+            "f1": 0.41726618705035967,
+            "support": 62
+          },
+          "GRADUATION_YEAR": {
+            "precision": 0.6060606060606061,
+            "recall": 0.37037037037037035,
+            "f1": 0.45977011494252873,
+            "support": 54
+          },
+          "COMPANIES_WORKED_AT": {
+            "precision": 0.3021978021978022,
+            "recall": 0.41044776119402987,
+            "f1": 0.3481012658227848,
+            "support": 134
+          },
+          "DESIGNATION": {
+            "precision": 0.38392857142857145,
+            "recall": 0.4215686274509804,
+            "f1": 0.40186915887850466,
+            "support": 102
+          },
+          "YEARS_OF_EXPERIENCE": {
+            "precision": 0.16666666666666666,
+            "recall": 0.2,
+            "f1": 0.1818181818181818,
+            "support": 10
+          },
+          "SKILLS": {
+            "precision": 0.12857142857142856,
+            "recall": 0.20930232558139536,
+            "f1": 0.15929203539823006,
+            "support": 86
+          }
+        },
+        "micro": {
+          "precision": 0.37514654161781946,
+          "recall": 0.4644412191582003,
+          "f1": 0.41504539559014264,
+          "support": 689
+        },
+        "macro": {
+          "precision": 0.42561495317660203,
+          "recall": 0.4744894582612667,
+          "f1": 0.4421273813706417
+        }
+      },
+      "test_with_rules": {
+        "types": [
+          "NAME",
+          "EMAIL",
+          "LOCATION",
+          "COLLEGE_NAME",
+          "DEGREE",
+          "GRADUATION_YEAR",
+          "COMPANIES_WORKED_AT",
+          "DESIGNATION",
+          "YEARS_OF_EXPERIENCE",
+          "SKILLS"
+        ],
+        "per_type": {
+          "NAME": {
+            "precision": 0.8863636363636364,
+            "recall": 0.9069767441860465,
+            "f1": 0.896551724137931,
+            "support": 43
+          },
+          "EMAIL": {
+            "precision": 0.4666666666666667,
+            "recall": 0.9423076923076923,
+            "f1": 0.624203821656051,
+            "support": 52
+          },
+          "LOCATION": {
+            "precision": 0.6172839506172839,
+            "recall": 0.6666666666666666,
+            "f1": 0.641025641025641,
+            "support": 75
+          },
+          "COLLEGE_NAME": {
+            "precision": 0.26732673267326734,
+            "recall": 0.38028169014084506,
+            "f1": 0.3139534883720931,
+            "support": 71
+          },
+          "DEGREE": {
+            "precision": 0.3815789473684211,
+            "recall": 0.46774193548387094,
+            "f1": 0.4202898550724638,
+            "support": 62
+          },
+          "GRADUATION_YEAR": {
+            "precision": 0.5882352941176471,
+            "recall": 0.37037037037037035,
+            "f1": 0.45454545454545453,
+            "support": 54
+          },
+          "COMPANIES_WORKED_AT": {
+            "precision": 0.3021978021978022,
+            "recall": 0.41044776119402987,
+            "f1": 0.3481012658227848,
+            "support": 134
+          },
+          "DESIGNATION": {
+            "precision": 0.38392857142857145,
+            "recall": 0.4215686274509804,
+            "f1": 0.40186915887850466,
+            "support": 102
+          },
+          "YEARS_OF_EXPERIENCE": {
+            "precision": 0.16666666666666666,
+            "recall": 0.2,
+            "f1": 0.1818181818181818,
+            "support": 10
+          },
+          "SKILLS": {
+            "precision": 0.12857142857142856,
+            "recall": 0.20930232558139536,
+            "f1": 0.15929203539823006,
+            "support": 86
+          }
+        },
+        "micro": {
+          "precision": 0.3742953776775648,
+          "recall": 0.4818577648766328,
+          "f1": 0.4213197969543147,
+          "support": 689
+        },
+        "macro": {
+          "precision": 0.41888196966713914,
+          "recall": 0.49756638133818987,
+          "f1": 0.4441650626727335
+        }
+      }
+    },
+    {
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.4167831219982303,
+          "val_loss": 0.5350922107696533,
+          "val_micro_f1": 0.0055248618784530384,
+          "val_macro_f1": 0.0016597510373443983
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.36395794509700613,
+          "val_loss": 0.3935589611530304,
+          "val_micro_f1": 0.18276762402088773,
+          "val_macro_f1": 0.195978542871472
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.270430731288554,
+          "val_loss": 0.35818424622217815,
+          "val_micro_f1": 0.2609673790776153,
+          "val_macro_f1": 0.2613734574510715
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.2129173879845861,
+          "val_loss": 0.3335861086845398,
+          "val_micro_f1": 0.34801288936627284,
+          "val_macro_f1": 0.3515239142676424
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.16031267962298182,
+          "val_loss": 0.3404854953289032,
+          "val_micro_f1": 0.3737957610789981,
+          "val_macro_f1": 0.38487955317300393
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.12768435606545808,
+          "val_loss": 0.33834924499193825,
+          "val_micro_f1": 0.40433925049309666,
+          "val_macro_f1": 0.4167101043886664
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.10751755981211457,
+          "val_loss": 0.3633044878641764,
+          "val_micro_f1": 0.40380952380952384,
+          "val_macro_f1": 0.41806071362949926
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.09222677407082189,
+          "val_loss": 0.34755590359369914,
+          "val_micro_f1": 0.4019704433497537,
+          "val_macro_f1": 0.4167916828088927
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.0844859996783819,
+          "val_loss": 0.3519980033238729,
+          "val_micro_f1": 0.3972194637537239,
+          "val_macro_f1": 0.43116047724798945
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.07833780227095316,
+          "val_loss": 0.3488605399926504,
+          "val_micro_f1": 0.3920792079207921,
+          "val_macro_f1": 0.4044855007494032
+        }
+      ],
+      "best_epoch": 6,
+      "best_val_micro_f1": 0.40433925049309666,
+      "train_time_sec": 211.4215054512024,
+      "n_train_windows": 418,
+      "n_train_docs": 149,
+      "oversampled_rare_types": null,
+      "test": {
+        "types": [
+          "NAME",
+          "EMAIL",
+          "LOCATION",
+          "COLLEGE_NAME",
+          "DEGREE",
+          "GRADUATION_YEAR",
+          "COMPANIES_WORKED_AT",
+          "DESIGNATION",
+          "YEARS_OF_EXPERIENCE",
+          "SKILLS"
+        ],
+        "per_type": {
+          "NAME": {
+            "precision": 0.9545454545454546,
+            "recall": 0.9767441860465116,
+            "f1": 0.9655172413793104,
+            "support": 43
+          },
+          "EMAIL": {
+            "precision": 0.4375,
+            "recall": 0.813953488372093,
+            "f1": 0.5691056910569106,
+            "support": 43
+          },
+          "LOCATION": {
+            "precision": 0.5315315315315315,
+            "recall": 0.6413043478260869,
+            "f1": 0.58128078817734,
+            "support": 92
+          },
+          "COLLEGE_NAME": {
+            "precision": 0.26595744680851063,
+            "recall": 0.4032258064516129,
+            "f1": 0.3205128205128205,
+            "support": 62
+          },
+          "DEGREE": {
+            "precision": 0.3333333333333333,
+            "recall": 0.5454545454545454,
+            "f1": 0.41379310344827586,
+            "support": 55
+          },
+          "GRADUATION_YEAR": {
+            "precision": 0.5434782608695652,
+            "recall": 0.45454545454545453,
+            "f1": 0.49504950495049505,
+            "support": 55
+          },
+          "COMPANIES_WORKED_AT": {
+            "precision": 0.3087248322147651,
+            "recall": 0.3865546218487395,
+            "f1": 0.3432835820895523,
+            "support": 119
+          },
+          "DESIGNATION": {
+            "precision": 0.34210526315789475,
+            "recall": 0.36792452830188677,
+            "f1": 0.3545454545454545,
+            "support": 106
+          },
+          "YEARS_OF_EXPERIENCE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 11
+          },
+          "SKILLS": {
+            "precision": 0.04294478527607362,
+            "recall": 0.04046242774566474,
+            "f1": 0.041666666666666664,
+            "support": 173
+          }
+        },
+        "micro": {
+          "precision": 0.3433667781493868,
+          "recall": 0.4057971014492754,
+          "f1": 0.37198067632850246,
+          "support": 759
+        },
+        "macro": {
+          "precision": 0.3760120907737129,
+          "recall": 0.4630169406592596,
+          "f1": 0.4084754852826826
+        }
+      },
+      "test_with_rules": {
+        "types": [
+          "NAME",
+          "EMAIL",
+          "LOCATION",
+          "COLLEGE_NAME",
+          "DEGREE",
+          "GRADUATION_YEAR",
+          "COMPANIES_WORKED_AT",
+          "DESIGNATION",
+          "YEARS_OF_EXPERIENCE",
+          "SKILLS"
+        ],
+        "per_type": {
+          "NAME": {
+            "precision": 0.9545454545454546,
+            "recall": 0.9767441860465116,
+            "f1": 0.9655172413793104,
+            "support": 43
+          },
+          "EMAIL": {
+            "precision": 0.37037037037037035,
+            "recall": 0.9302325581395349,
+            "f1": 0.5298013245033112,
+            "support": 43
+          },
+          "LOCATION": {
+            "precision": 0.5315315315315315,
+            "recall": 0.6413043478260869,
+            "f1": 0.58128078817734,
+            "support": 92
+          },
+          "COLLEGE_NAME": {
+            "precision": 0.26595744680851063,
+            "recall": 0.4032258064516129,
+            "f1": 0.3205128205128205,
+            "support": 62
+          },
+          "DEGREE": {
+            "precision": 0.3333333333333333,
+            "recall": 0.5454545454545454,
+            "f1": 0.41379310344827586,
+            "support": 55
+          },
+          "GRADUATION_YEAR": {
+            "precision": 0.5625,
+            "recall": 0.4909090909090909,
+            "f1": 0.5242718446601942,
+            "support": 55
+          },
+          "COMPANIES_WORKED_AT": {
+            "precision": 0.3087248322147651,
+            "recall": 0.3865546218487395,
+            "f1": 0.3432835820895523,
+            "support": 119
+          },
+          "DESIGNATION": {
+            "precision": 0.34210526315789475,
+            "recall": 0.36792452830188677,
+            "f1": 0.3545454545454545,
+            "support": 106
+          },
+          "YEARS_OF_EXPERIENCE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 11
+          },
+          "SKILLS": {
+            "precision": 0.04294478527607362,
+            "recall": 0.04046242774566474,
+            "f1": 0.041666666666666664,
+            "support": 173
+          }
+        },
+        "micro": {
+          "precision": 0.33980582524271846,
+          "recall": 0.4150197628458498,
+          "f1": 0.3736654804270463,
+          "support": 759
+        },
+        "macro": {
+          "precision": 0.3712013017237934,
+          "recall": 0.4782812112723674,
+          "f1": 0.4074672825982925
+        }
+      }
+    }
+  ],
+  "summary": {
+    "test_micro_f1": {
+      "mean": 0.406579055799423,
+      "std": 0.027143256073757987,
+      "folds": [
+        0.4246575342465754,
+        0.37854500616522807,
+        0.44266666666666665,
+        0.41504539559014264,
+        0.37198067632850246
+      ]
+    },
+    "test_macro_f1": {
+      "mean": 0.42227157384691755,
+      "std": 0.020648091413098084,
+      "folds": [
+        0.43470633985018753,
+        0.3883111076750526,
+        0.43773755505602346,
+        0.4421273813706417,
+        0.4084754852826826
+      ]
+    },
+    "test_per_type_f1": {
+      "NAME": {
+        "mean": 0.8824408674783488,
+        "std": 0.05188288932566952
+      },
+      "EMAIL": {
+        "mean": 0.5877897548195694,
+        "std": 0.017309449537441884
+      },
+      "LOCATION": {
+        "mean": 0.6111007416229091,
+        "std": 0.022914481022207667
+      },
+      "COLLEGE_NAME": {
+        "mean": 0.30786386487524536,
+        "std": 0.03439461135959963
+      },
+      "DEGREE": {
+        "mean": 0.4325463093357308,
+        "std": 0.041788270904222644
+      },
+      "GRADUATION_YEAR": {
+        "mean": 0.45751171763807197,
+        "std": 0.055845422755158754
+      },
+      "COMPANIES_WORKED_AT": {
+        "mean": 0.3785496702658145,
+        "std": 0.032899625210746755
+      },
+      "DESIGNATION": {
+        "mean": 0.36652559776998656,
+        "std": 0.03723703117739258
+      },
+      "YEARS_OF_EXPERIENCE": {
+        "mean": 0.08993506493506494,
+        "std": 0.07569601704264738
+      },
+      "SKILLS": {
+        "mean": 0.1084521497284345,
+        "std": 0.03853221284797741
+      }
+    },
+    "test_with_rules_micro_f1": {
+      "mean": 0.4114107796383327,
+      "std": 0.026846673459059885,
+      "folds": [
+        0.4291497975708502,
+        0.3871748336358137,
+        0.4457439896036387,
+        0.4213197969543147,
+        0.3736654804270463
+      ]
+    },
+    "test_with_rules_macro_f1": {
+      "mean": 0.42367556179874233,
+      "std": 0.019826168992509833,
+      "folds": [
+        0.43671509003351455,
+        0.39307409026061585,
+        0.43695628342855547,
+        0.4441650626727335,
+        0.4074672825982925
+      ]
+    },
+    "test_with_rules_per_type_f1": {
+      "NAME": {
+        "mean": 0.8824408674783488,
+        "std": 0.05188288932566952
+      },
+      "EMAIL": {
+        "mean": 0.5933892743201176,
+        "std": 0.03841197153192373
+      },
+      "LOCATION": {
+        "mean": 0.6111007416229091,
+        "std": 0.022914481022207667
+      },
+      "COLLEGE_NAME": {
+        "mean": 0.30786386487524536,
+        "std": 0.03439461135959963
+      },
+      "DEGREE": {
+        "mean": 0.4338267186158273,
+        "std": 0.04065077181626262
+      },
+      "GRADUATION_YEAR": {
+        "mean": 0.46442929560314117,
+        "std": 0.06328747788766696
+      },
+      "COMPANIES_WORKED_AT": {
+        "mean": 0.3785496702658145,
+        "std": 0.032899625210746755
+      },
+      "DESIGNATION": {
+        "mean": 0.36652559776998656,
+        "std": 0.03723703117739258
+      },
+      "YEARS_OF_EXPERIENCE": {
+        "mean": 0.08993506493506494,
+        "std": 0.07569601704264738
+      },
+      "SKILLS": {
+        "mean": 0.10869452250096893,
+        "std": 0.038609559485302695
+      }
+    }
+  }
+}

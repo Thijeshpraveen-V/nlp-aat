@@ -1,0 +1,251 @@
+{
+  "base_model": "dslim/bert-base-NER",
+  "final_run": "main",
+  "n_test_resumes": 33,
+  "before_after": {
+    "rows": [
+      {
+        "type": "NAME",
+        "support": 37,
+        "before_p": 0.23809523809523808,
+        "before_r": 0.2702702702702703,
+        "before": 0.25316455696202533,
+        "after_p": 0.8787878787878788,
+        "after_r": 0.7837837837837838,
+        "after": 0.8285714285714285,
+        "delta": 0.5754068716094032
+      },
+      {
+        "type": "EMAIL",
+        "support": 40,
+        "before_p": 0.0,
+        "before_r": 0.0,
+        "before": 0.0,
+        "after_p": 0.5,
+        "after_r": 0.725,
+        "after": 0.5918367346938775,
+        "delta": 0.5918367346938775
+      },
+      {
+        "type": "LOCATION",
+        "support": 54,
+        "before_p": 0.0967741935483871,
+        "before_r": 0.6111111111111112,
+        "before": 0.1670886075949367,
+        "after_p": 0.5454545454545454,
+        "after_r": 0.6666666666666666,
+        "after": 0.6,
+        "delta": 0.43291139240506327
+      },
+      {
+        "type": "COLLEGE_NAME",
+        "support": 49,
+        "before_p": 0.0,
+        "before_r": 0.0,
+        "before": 0.0,
+        "after_p": 0.3142857142857143,
+        "after_r": 0.4489795918367347,
+        "after": 0.3697478991596638,
+        "delta": 0.3697478991596638
+      },
+      {
+        "type": "DEGREE",
+        "support": 41,
+        "before_p": 0.0,
+        "before_r": 0.0,
+        "before": 0.0,
+        "after_p": 0.42857142857142855,
+        "after_r": 0.5853658536585366,
+        "after": 0.4948453608247423,
+        "delta": 0.4948453608247423
+      },
+      {
+        "type": "GRADUATION_YEAR",
+        "support": 27,
+        "before_p": 0.0,
+        "before_r": 0.0,
+        "before": 0.0,
+        "after_p": 0.37209302325581395,
+        "after_r": 0.5925925925925926,
+        "after": 0.45714285714285713,
+        "delta": 0.45714285714285713
+      },
+      {
+        "type": "COMPANIES_WORKED_AT",
+        "support": 117,
+        "before_p": 0.05375347544022243,
+        "before_r": 0.49572649572649574,
+        "before": 0.09698996655518394,
+        "after_p": 0.41975308641975306,
+        "after_r": 0.5811965811965812,
+        "after": 0.4874551971326165,
+        "delta": 0.39046523057743254
+      },
+      {
+        "type": "DESIGNATION",
+        "support": 76,
+        "before_p": 0.0,
+        "before_r": 0.0,
+        "before": 0.0,
+        "after_p": 0.33,
+        "after_r": 0.4342105263157895,
+        "after": 0.37500000000000006,
+        "delta": 0.37500000000000006
+      },
+      {
+        "type": "YEARS_OF_EXPERIENCE",
+        "support": 7,
+        "before_p": 0.0,
+        "before_r": 0.0,
+        "before": 0.0,
+        "after_p": 0.125,
+        "after_r": 0.14285714285714285,
+        "after": 0.13333333333333333,
+        "delta": 0.13333333333333333
+      },
+      {
+        "type": "SKILLS",
+        "support": 53,
+        "before_p": 0.0,
+        "before_r": 0.0,
+        "before": 0.0,
+        "after_p": 0.08791208791208792,
+        "after_r": 0.1509433962264151,
+        "after": 0.11111111111111112,
+        "delta": 0.11111111111111112
+      }
+    ],
+    "overall": [
+      {
+        "metric": "Micro F1 — All types",
+        "before": 0.10290371879775854,
+        "after": 0.4478114478114478,
+        "delta": 0.34490772901368927
+      },
+      {
+        "metric": "Macro F1 — All types",
+        "before": 0.051724313111214594,
+        "after": 0.444904392196963,
+        "delta": 0.39318007908574837
+      },
+      {
+        "metric": "Micro F1 — Overlap types (NAME/COMPANY/LOC)",
+        "before": 0.12095808383233533,
+        "after": 0.5671641791044775,
+        "delta": 0.44620609527214217
+      },
+      {
+        "metric": "Macro F1 — Overlap types (NAME/COMPANY/LOC)",
+        "before": 0.17241437703738197,
+        "after": 0.6386755419013483,
+        "delta": 0.4662611648639664
+      }
+    ]
+  },
+  "cv": [
+    {
+      "model": "Pretrained (all types)",
+      "micro_mean": 0.10183924298632578,
+      "micro_std": 0.0109472828297152,
+      "macro_mean": 0.05946959868675537,
+      "macro_std": 0.0027622947507943614
+    },
+    {
+      "model": "Pretrained (overlap types)",
+      "micro_mean": 0.12342571085487694,
+      "micro_std": 0.012357939302258796,
+      "macro_mean": 0.19823199562251792,
+      "macro_std": 0.009207649169314542
+    },
+    {
+      "model": "Fine-tuned (all types)",
+      "micro_mean": 0.406579055799423,
+      "micro_std": 0.027143256073757987,
+      "macro_mean": 0.42227157384691755,
+      "macro_std": 0.020648091413098084
+    },
+    {
+      "model": "Fine-tuned + rules (all types)",
+      "micro_mean": 0.4114107796383327,
+      "micro_std": 0.026846673459059885,
+      "macro_mean": 0.42367556179874233,
+      "macro_std": 0.019826168992509833
+    }
+  ],
+  "ablations": [
+    {
+      "name": "Final fine-tuned (lr=3e-05, bs=8, epochs=10, sliding window)",
+      "val_micro_f1": 0.42046511627906974,
+      "micro_f1": 0.4478114478114478,
+      "macro_f1": 0.444904392196963
+    },
+    {
+      "name": "+ regex rule layer (EMAIL, GRADUATION_YEAR)",
+      "val_micro_f1": null,
+      "micro_f1": 0.4559068219633943,
+      "macro_f1": 0.4512851444689921
+    },
+    {
+      "name": "Epochs = 5 (instead of 10)",
+      "val_micro_f1": 0.30985915492957744,
+      "micro_f1": 0.3113658070678128,
+      "macro_f1": 0.29803907940870933
+    },
+    {
+      "name": "+ class-weighted loss",
+      "val_micro_f1": 0.3513513513513513,
+      "micro_f1": 0.338785046728972,
+      "macro_f1": 0.3581595625523648
+    },
+    {
+      "name": "+ oversampling rare-entity resumes",
+      "val_micro_f1": 0.4475524475524475,
+      "micro_f1": 0.43217665615141954,
+      "macro_f1": 0.4521450424245413
+    },
+    {
+      "name": "Plain truncation (512) instead of sliding window",
+      "val_micro_f1": 0.35772357723577236,
+      "micro_f1": 0.38512035010940926,
+      "macro_f1": 0.3444912656343265
+    },
+    {
+      "name": "No text normalisation",
+      "val_micro_f1": 0.4230055658627087,
+      "micro_f1": 0.44705882352941184,
+      "macro_f1": 0.4457843017365365
+    }
+  ],
+  "efficiency": {
+    "device": "cpu",
+    "threads": 14,
+    "n_resumes": 33,
+    "mean_words_per_resume": 850.2121212121212,
+    "repeats_min_of": 3,
+    "pretrained": {
+      "sec_per_resume_mean": 1.1446617151536471,
+      "sec_per_resume_median": 0.9622681000037119,
+      "sec_per_resume_p95": 2.7834913000027854,
+      "words_per_sec": 742.7627830620664,
+      "n_parameters": 107726601
+    },
+    "finetuned": {
+      "sec_per_resume_mean": 1.18611575757589,
+      "sec_per_resume_median": 0.989054000005126,
+      "sec_per_resume_p95": 3.0101018199929945,
+      "words_per_sec": 716.8036642137965,
+      "n_parameters": 107735829,
+      "model_size_mb": 411.00182723999023,
+      "train_time_sec": 206.4649269580841,
+      "train_device": "NVIDIA GeForce RTX 4050 Laptop GPU"
+    }
+  },
+  "figures": [
+    "ablations.png",
+    "before_after_f1.png",
+    "confusion_matrix_finetuned.png",
+    "cv_folds.png",
+    "label_distribution.png",
+    "training_curves.png"
+  ]
+}

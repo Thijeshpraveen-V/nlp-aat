@@ -1,0 +1,110 @@
+[
+  {
+    "text": "Mayank Shukla",
+    "label": "NAME",
+    "start": 0,
+    "end": 13
+  },
+  {
+    "text": "Test Analyst",
+    "label": "DESIGNATION",
+    "start": 33,
+    "end": 45
+  },
+  {
+    "text": "Infosys Ltd/Edgeverve Systems Ltd",
+    "label": "COMPANIES_WORKED_AT",
+    "start": 48,
+    "end": 81
+  },
+  {
+    "text": "Bengaluru",
+    "label": "LOCATION",
+    "start": 83,
+    "end": 92
+  },
+  {
+    "text": "indeed.com/r/Mayank-Shukla/3c6042bd141ad353",
+    "label": "EMAIL",
+    "start": 126,
+    "end": 169
+  },
+  {
+    "text": "Bengaluru",
+    "label": "LOCATION",
+    "start": 567,
+    "end": 576
+  },
+  {
+    "text": "Infosys Ltd/Edgeverve Systems Ltd",
+    "label": "COMPANIES_WORKED_AT",
+    "start": 639,
+    "end": 672
+  },
+  {
+    "text": "MBA in Banking and Finance",
+    "label": "DEGREE",
+    "start": 1980,
+    "end": 2006
+  },
+  {
+    "text": "Manipal University",
+    "label": "COLLEGE_NAME",
+    "start": 2008,
+    "end": 2026
+  },
+  {
+    "text": "Bengaluru",
+    "label": "LOCATION",
+    "start": 2030,
+    "end": 2039
+  },
+  {
+    "text": "2014",
+    "label": "GRADUATION_YEAR",
+    "start": 2052,
+    "end": 2056
+  },
+  {
+    "text": "B.Tech. in Information Technology",
+    "label": "DEGREE",
+    "start": 2058,
+    "end": 2091
+  },
+  {
+    "text": "indeed.com/r/Mayank-Shukla/3c6042bd141ad353",
+    "label": "EMAIL",
+    "start": 2105,
+    "end": 2148
+  },
+  {
+    "text": "Saroj Institute of Technology & Management",
+    "label": "COLLEGE_NAME",
+    "start": 2192,
+    "end": 2234
+  },
+  {
+    "text": "2011",
+    "label": "COLLEGE_NAME",
+    "start": 2262,
+    "end": 2266
+  },
+  {
+    "text": "Lucknow Public Inter College",
+    "label": "COLLEGE_NAME",
+    "start": 2268,
+    "end": 2296
+  },
+  {
+    "text": "2005",
+    "label": "GRADUATION_YEAR",
+    "start": 2324,
+    "end": 2328
+  },
+  {
+    "text": "CRM (3 years), DATABASE (3 years), ORACLE (3 years), Tosca (3 years), Automation Testing (3\nyears), Selenium (1 year), Core Java (1 year)\n\nADDITIONAL INFORMATION\n\nKey Skills:\n❖ Software tools: IBM Rational Collaborative Lifecycle Management\n❖ Testing Tool: IBM Rational Quality Management on Jazz Server\n❖ Test Automation Tools: TOSCA, Selenium\n❖ Programming Language: Core Java\n❖ IDE: Eclipse\n❖ Database: Oracle, EDB, Sqlserver\n❖ Database Tools: SQL Developer, Toad, Tora\n❖ Software tools: Filezilla, MobaXterm, Putty, Office tools\n❖ Platforms: Windows, UNIX\n❖ Domain Software Knowledge: Finacle Core Banking Solution, Finacle CRM Solution.\n\nSkills: Fast learner, leadership quality, team player, presentation skills, work devotee, punctual,\ngood communication and listening skills.",
+    "label": "SKILLS",
+    "start": 2348,
+    "end": 3131
+  }
+]

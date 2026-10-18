@@ -1,0 +1,84 @@
+{
+  "ablations": [
+    {
+      "name": "Final fine-tuned (lr=3e-05, bs=8, epochs=10, sliding window)",
+      "val_micro_f1": 0.42046511627906974,
+      "micro_f1": 0.4478114478114478,
+      "macro_f1": 0.444904392196963
+    },
+    {
+      "name": "+ regex rule layer (EMAIL, GRADUATION_YEAR)",
+      "val_micro_f1": null,
+      "micro_f1": 0.4559068219633943,
+      "macro_f1": 0.4512851444689921
+    },
+    {
+      "name": "Epochs = 5 (instead of 10)",
+      "val_micro_f1": 0.30985915492957744,
+      "micro_f1": 0.3113658070678128,
+      "macro_f1": 0.29803907940870933
+    },
+    {
+      "name": "+ class-weighted loss",
+      "val_micro_f1": 0.3513513513513513,
+      "micro_f1": 0.338785046728972,
+      "macro_f1": 0.3581595625523648
+    },
+    {
+      "name": "+ oversampling rare-entity resumes",
+      "val_micro_f1": 0.4475524475524475,
+      "micro_f1": 0.43217665615141954,
+      "macro_f1": 0.4521450424245413
+    },
+    {
+      "name": "Plain truncation (512) instead of sliding window",
+      "val_micro_f1": 0.35772357723577236,
+      "micro_f1": 0.38512035010940926,
+      "macro_f1": 0.3444912656343265
+    },
+    {
+      "name": "No text normalisation",
+      "val_micro_f1": 0.4230055658627087,
+      "micro_f1": 0.44705882352941184,
+      "macro_f1": 0.4457843017365365
+    }
+  ],
+  "hp_grid": [
+    {
+      "name": "lr=2e-05, bs=16",
+      "val_micro_f1": 0.2778904665314402,
+      "best_epoch": 10,
+      "micro_f1": 0.33269961977186313
+    },
+    {
+      "name": "lr=2e-05, bs=8",
+      "val_micro_f1": 0.3927550047664442,
+      "best_epoch": 8,
+      "micro_f1": 0.4203273040482343
+    },
+    {
+      "name": "lr=3e-05, bs=16",
+      "val_micro_f1": 0.36019900497512436,
+      "best_epoch": 9,
+      "micro_f1": 0.38859180035650626
+    },
+    {
+      "name": "lr=3e-05, bs=8",
+      "val_micro_f1": 0.4237918215613383,
+      "best_epoch": 10,
+      "micro_f1": 0.44763513513513514
+    },
+    {
+      "name": "lr=5e-05, bs=16",
+      "val_micro_f1": 0.40331491712707185,
+      "best_epoch": 9,
+      "micro_f1": 0.43781942078364566
+    },
+    {
+      "name": "lr=5e-05, bs=8",
+      "val_micro_f1": 0.42159383033419023,
+      "best_epoch": 6,
+      "micro_f1": 0.45893719806763283
+    }
+  ]
+}

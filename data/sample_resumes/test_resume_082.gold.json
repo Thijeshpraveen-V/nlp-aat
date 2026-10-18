@@ -1,0 +1,110 @@
+[
+  {
+    "text": "Shubham Mittal",
+    "label": "NAME",
+    "start": 0,
+    "end": 14
+  },
+  {
+    "text": "System Engineer",
+    "label": "DESIGNATION",
+    "start": 15,
+    "end": 30
+  },
+  {
+    "text": "Infosys Limited",
+    "label": "COMPANIES_WORKED_AT",
+    "start": 33,
+    "end": 48
+  },
+  {
+    "text": "Mysore",
+    "label": "LOCATION",
+    "start": 50,
+    "end": 56
+  },
+  {
+    "text": "indeed.com/r/Shubham-Mittal/4b29ab0545b0f67f",
+    "label": "EMAIL",
+    "start": 90,
+    "end": 134
+  },
+  {
+    "text": "2.0 Years",
+    "label": "YEARS_OF_EXPERIENCE",
+    "start": 145,
+    "end": 154
+  },
+  {
+    "text": "System Engineer",
+    "label": "DESIGNATION",
+    "start": 194,
+    "end": 209
+  },
+  {
+    "text": "System Engineer",
+    "label": "DESIGNATION",
+    "start": 261,
+    "end": 276
+  },
+  {
+    "text": "System Engineer",
+    "label": "DESIGNATION",
+    "start": 916,
+    "end": 931
+  },
+  {
+    "text": "System Engineer",
+    "label": "DESIGNATION",
+    "start": 1920,
+    "end": 1935
+  },
+  {
+    "text": "Mysore",
+    "label": "LOCATION",
+    "start": 2056,
+    "end": 2062
+  },
+  {
+    "text": "2016",
+    "label": "GRADUATION_YEAR",
+    "start": 2082,
+    "end": 2086
+  },
+  {
+    "text": "B.Tech in EEE",
+    "label": "DEGREE",
+    "start": 2110,
+    "end": 2123
+  },
+  {
+    "text": "National Institute Of Technology",
+    "label": "COLLEGE_NAME",
+    "start": 2125,
+    "end": 2157
+  },
+  {
+    "text": "2016",
+    "label": "GRADUATION_YEAR",
+    "start": 2159,
+    "end": 2163
+  },
+  {
+    "text": "St. John's School",
+    "label": "COLLEGE_NAME",
+    "start": 2165,
+    "end": 2182
+  },
+  {
+    "text": "2009",
+    "label": "GRADUATION_YEAR",
+    "start": 2184,
+    "end": 2188
+  },
+  {
+    "text": "Html, Css, Javascript, Salesforce",
+    "label": "SKILLS",
+    "start": 2198,
+    "end": 2231
+  }
+]

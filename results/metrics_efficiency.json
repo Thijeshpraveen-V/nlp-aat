@@ -1,0 +1,24 @@
+{
+  "device": "cpu",
+  "threads": 14,
+  "n_resumes": 33,
+  "mean_words_per_resume": 850.2121212121212,
+  "repeats_min_of": 3,
+  "pretrained": {
+    "sec_per_resume_mean": 1.1446617151536471,
+    "sec_per_resume_median": 0.9622681000037119,
+    "sec_per_resume_p95": 2.7834913000027854,
+    "words_per_sec": 742.7627830620664,
+    "n_parameters": 107726601
+  },
+  "finetuned": {
+    "sec_per_resume_mean": 1.18611575757589,
+    "sec_per_resume_median": 0.989054000005126,
+    "sec_per_resume_p95": 3.0101018199929945,
+    "words_per_sec": 716.8036642137965,
+    "n_parameters": 107735829,
+    "model_size_mb": 411.00182723999023,
+    "train_time_sec": 206.4649269580841,
+    "train_device": "NVIDIA GeForce RTX 4050 Laptop GPU"
+  }
+}

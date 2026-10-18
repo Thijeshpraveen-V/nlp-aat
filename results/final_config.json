@@ -1,0 +1,69 @@
+{
+  "selected_by": "best validation micro-F1",
+  "grid": [
+    {
+      "tag": "hp_lr2e-5_bs16",
+      "lr": 2e-05,
+      "batch_size": 16,
+      "epochs": 10,
+      "best_epoch": 10,
+      "best_val_micro_f1": 0.2778904665314402,
+      "test_micro_f1": 0.33269961977186313
+    },
+    {
+      "tag": "hp_lr2e-5_bs8",
+      "lr": 2e-05,
+      "batch_size": 8,
+      "epochs": 10,
+      "best_epoch": 8,
+      "best_val_micro_f1": 0.3927550047664442,
+      "test_micro_f1": 0.4203273040482343
+    },
+    {
+      "tag": "hp_lr3e-5_bs16",
+      "lr": 3e-05,
+      "batch_size": 16,
+      "epochs": 10,
+      "best_epoch": 9,
+      "best_val_micro_f1": 0.36019900497512436,
+      "test_micro_f1": 0.38859180035650626
+    },
+    {
+      "tag": "hp_lr3e-5_bs8",
+      "lr": 3e-05,
+      "batch_size": 8,
+      "epochs": 10,
+      "best_epoch": 10,
+      "best_val_micro_f1": 0.4237918215613383,
+      "test_micro_f1": 0.44763513513513514
+    },
+    {
+      "tag": "hp_lr5e-5_bs16",
+      "lr": 5e-05,
+      "batch_size": 16,
+      "epochs": 10,
+      "best_epoch": 9,
+      "best_val_micro_f1": 0.40331491712707185,
+      "test_micro_f1": 0.43781942078364566
+    },
+    {
+      "tag": "hp_lr5e-5_bs8",
+      "lr": 5e-05,
+      "batch_size": 8,
+      "epochs": 10,
+      "best_epoch": 6,
+      "best_val_micro_f1": 0.42159383033419023,
+      "test_micro_f1": 0.45893719806763283
+    }
+  ],
+  "best": {
+    "tag": "hp_lr3e-5_bs8",
+    "lr": 3e-05,
+    "batch_size": 8,
+    "epochs": 10,
+    "best_epoch": 10,
+    "best_val_micro_f1": 0.4237918215613383,
+    "test_micro_f1": 0.44763513513513514
+  },
+  "final_run": "main"
+}

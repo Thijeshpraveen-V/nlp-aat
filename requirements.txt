@@ -1,0 +1,19 @@
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch
+transformers
+datasets
+accelerate
+seqeval
+scikit-learn
+pandas
+numpy
+matplotlib
+seaborn
+pdfplumber
+python-docx
+fastapi
+uvicorn[standard]
+python-multipart
+streamlit
+python-pptx
+kaggle

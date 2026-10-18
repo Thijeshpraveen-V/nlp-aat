@@ -1,0 +1,127 @@
+{
+  "source": "https://www.kaggle.com/datasets/dataturks/resume-entities-for-ner",
+  "file": "Entity Recognition in Resumes.json",
+  "n_resumes_raw": 220,
+  "n_duplicates_removed": 1,
+  "duplicate_pairs_(orig_index,kept_index)": [
+    [
+      110,
+      72
+    ]
+  ],
+  "n_resumes": 219,
+  "n_word_tokens": 150753,
+  "tokens_per_resume": {
+    "mean": 688.3698630136986,
+    "min": 75,
+    "max": 3684
+  },
+  "entities_per_type": {
+    "COMPANIES_WORKED_AT": 668,
+    "DESIGNATION": 505,
+    "SKILLS": 455,
+    "LOCATION": 416,
+    "COLLEGE_NAME": 327,
+    "DEGREE": 296,
+    "EMAIL": 250,
+    "GRADUATION_YEAR": 249,
+    "NAME": 223,
+    "YEARS_OF_EXPERIENCE": 40
+  },
+  "entities_total": 3429,
+  "bio_tag_counts": {
+    "O": 129597,
+    "I-SKILLS": 11112,
+    "I-EMAIL": 2575,
+    "I-DEGREE": 1123,
+    "I-COLLEGE_NAME": 1057,
+    "I-DESIGNATION": 987,
+    "B-COMPANIES_WORKED_AT": 668,
+    "B-DESIGNATION": 505,
+    "I-COMPANIES_WORKED_AT": 468,
+    "B-SKILLS": 455,
+    "B-LOCATION": 416,
+    "B-COLLEGE_NAME": 327,
+    "B-DEGREE": 294,
+    "B-EMAIL": 250,
+    "B-GRADUATION_YEAR": 249,
+    "I-NAME": 242,
+    "B-NAME": 223,
+    "I-LOCATION": 91,
+    "I-YEARS_OF_EXPERIENCE": 72,
+    "B-YEARS_OF_EXPERIENCE": 40,
+    "I-GRADUATION_YEAR": 2
+  },
+  "fraction_O_tokens": 0.8596644842888699,
+  "split_sizes": {
+    "train": 153,
+    "val": 33,
+    "test": 33
+  },
+  "split_entities": {
+    "train": {
+      "NAME": 152,
+      "DESIGNATION": 351,
+      "COMPANIES_WORKED_AT": 476,
+      "LOCATION": 294,
+      "EMAIL": 173,
+      "COLLEGE_NAME": 232,
+      "GRADUATION_YEAR": 171,
+      "SKILLS": 362,
+      "DEGREE": 209,
+      "YEARS_OF_EXPERIENCE": 30
+    },
+    "val": {
+      "NAME": 34,
+      "DESIGNATION": 78,
+      "EMAIL": 37,
+      "COMPANIES_WORKED_AT": 75,
+      "LOCATION": 68,
+      "GRADUATION_YEAR": 51,
+      "DEGREE": 46,
+      "COLLEGE_NAME": 46,
+      "SKILLS": 40,
+      "YEARS_OF_EXPERIENCE": 3
+    },
+    "test": {
+      "NAME": 37,
+      "DESIGNATION": 76,
+      "COMPANIES_WORKED_AT": 117,
+      "EMAIL": 40,
+      "DEGREE": 41,
+      "COLLEGE_NAME": 49,
+      "GRADUATION_YEAR": 27,
+      "SKILLS": 53,
+      "LOCATION": 54,
+      "YEARS_OF_EXPERIENCE": 7
+    }
+  },
+  "cv_fold_test_sizes": [
+    44,
+    44,
+    44,
+    44,
+    43
+  ],
+  "train_test_identical_texts": 0,
+  "alignment": {
+    "dropped_unknown_label": 2,
+    "dropped_empty": 1,
+    "dropped_overlap": 103,
+    "dropped_overlap_by_type": {
+      "COMPANIES_WORKED_AT": 58,
+      "LOCATION": 13,
+      "SKILLS": 12,
+      "COLLEGE_NAME": 2,
+      "DESIGNATION": 9,
+      "EMAIL": 1,
+      "GRADUATION_YEAR": 4,
+      "YEARS_OF_EXPERIENCE": 4
+    },
+    "span_misaligned_expanded_to_word_boundary": 201,
+    "span_no_tokens": 0,
+    "spans_after_overlap_resolution": 3429,
+    "roundtrip_recovered_pct": 99.09594634004083,
+    "original_span_exact_recovered_pct": 94.13823272090988
+  }
+}

@@ -1,0 +1,15 @@
+# secrets
+.env
+# environments / dependencies (recreate with requirements.txt and npm install)
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+# large or licensed artefacts (regenerate with the scripts; see README)
+models/
+data/raw/
+data/processed/
+frontend/dist/
+# logs and office temp files
+*.log
+~$*

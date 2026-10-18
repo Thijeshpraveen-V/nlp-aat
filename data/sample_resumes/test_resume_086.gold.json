@@ -1,0 +1,110 @@
+[
+  {
+    "text": "Soumya Balan",
+    "label": "NAME",
+    "start": 0,
+    "end": 12
+  },
+  {
+    "text": "Soumya Balan",
+    "label": "NAME",
+    "start": 13,
+    "end": 25
+  },
+  {
+    "text": "BE Computer Science",
+    "label": "DEGREE",
+    "start": 28,
+    "end": 47
+  },
+  {
+    "text": "3 yr",
+    "label": "YEARS_OF_EXPERIENCE",
+    "start": 50,
+    "end": 54
+  },
+  {
+    "text": "Microsoft Corporation",
+    "label": "COMPANIES_WORKED_AT",
+    "start": 74,
+    "end": 95
+  },
+  {
+    "text": "Thiruvananthapuram",
+    "label": "LOCATION",
+    "start": 97,
+    "end": 115
+  },
+  {
+    "text": "Technical Support Engineer",
+    "label": "DESIGNATION",
+    "start": 373,
+    "end": 399
+  },
+  {
+    "text": "2007",
+    "label": "GRADUATION_YEAR",
+    "start": 2395,
+    "end": 2399
+  },
+  {
+    "text": "2013",
+    "label": "GRADUATION_YEAR",
+    "start": 2441,
+    "end": 2445
+  },
+  {
+    "text": "Vivekananda Engineering College for Women",
+    "label": "COLLEGE_NAME",
+    "start": 2505,
+    "end": 2546
+  },
+  {
+    "text": "2013",
+    "label": "GRADUATION_YEAR",
+    "start": 2571,
+    "end": 2575
+  },
+  {
+    "text": "BTEC HNC in Aviation",
+    "label": "DEGREE",
+    "start": 2577,
+    "end": 2597
+  },
+  {
+    "text": "Frankfinn Institute of Airhostess Training",
+    "label": "COLLEGE_NAME",
+    "start": 2599,
+    "end": 2641
+  },
+  {
+    "text": "2008",
+    "label": "GRADUATION_YEAR",
+    "start": 2662,
+    "end": 2666
+  },
+  {
+    "text": "State Board +2",
+    "label": "DEGREE",
+    "start": 2668,
+    "end": 2682
+  },
+  {
+    "text": "2007",
+    "label": "GRADUATION_YEAR",
+    "start": 2684,
+    "end": 2688
+  },
+  {
+    "text": "DBMS, O365, Communication Skills, Exchange 2013, Hospitality, Networking, Computer\nOperating, Programming, Computer Hardware, Java, Exchange 2010, Teaching\n\nADDITIONAL INFORMATION\n\nSkill Set\n➢ Excellent communication and interpersonal skills.",
+    "label": "SKILLS",
+    "start": 2717,
+    "end": 2959
+  },
+  {
+    "text": "2007",
+    "label": "GRADUATION_YEAR",
+    "start": 3036,
+    "end": 3040
+  }
+]

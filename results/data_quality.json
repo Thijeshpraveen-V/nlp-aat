@@ -1,0 +1,81 @@
+{
+  "n_resumes": 219,
+  "email_spans": 250,
+  "email_spans_indeed_url": 250,
+  "email_spans_with_at": 0,
+  "indeed_url_spans_by_gold_type": {
+    "EMAIL": 250,
+    "SKILLS": 2,
+    "LOCATION": 4
+  },
+  "resumes_containing_indeed_url": 219,
+  "resumes_with_url_not_annotated": 26,
+  "section_heading_but_no_annotation": {
+    "SKILLS": {
+      "resumes_with_heading": 168,
+      "of_which_no_gold_span": 2
+    },
+    "COLLEGE_NAME": {
+      "resumes_with_heading": 211,
+      "of_which_no_gold_span": 21
+    },
+    "COMPANIES_WORKED_AT": {
+      "resumes_with_heading": 219,
+      "of_which_no_gold_span": 31
+    }
+  },
+  "resumes_with_at_least_one_span_of_type": {
+    "NAME": 217,
+    "EMAIL": 189,
+    "LOCATION": 198,
+    "COLLEGE_NAME": 193,
+    "DEGREE": 191,
+    "GRADUATION_YEAR": 104,
+    "COMPANIES_WORKED_AT": 188,
+    "DESIGNATION": 201,
+    "YEARS_OF_EXPERIENCE": 34,
+    "SKILLS": 182
+  },
+  "span_length_words": {
+    "NAME": {
+      "mean": 2.0538116591928253,
+      "max": 3
+    },
+    "EMAIL": {
+      "mean": 1.308,
+      "max": 3
+    },
+    "LOCATION": {
+      "mean": 1.0697115384615385,
+      "max": 3
+    },
+    "COLLEGE_NAME": {
+      "mean": 3.72782874617737,
+      "max": 10
+    },
+    "DEGREE": {
+      "mean": 3.77027027027027,
+      "max": 11
+    },
+    "GRADUATION_YEAR": {
+      "mean": 1.0080321285140563,
+      "max": 2
+    },
+    "COMPANIES_WORKED_AT": {
+      "mean": 1.6497005988023952,
+      "max": 13
+    },
+    "DESIGNATION": {
+      "mean": 2.732673267326733,
+      "max": 8
+    },
+    "YEARS_OF_EXPERIENCE": {
+      "mean": 2.025,
+      "max": 5
+    },
+    "SKILLS": {
+      "mean": 16.984615384615385,
+      "max": 352
+    }
+  }
+}
